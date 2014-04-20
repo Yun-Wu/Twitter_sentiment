@@ -70,8 +70,11 @@ public class Preprocess {
 		StringBuffer buffer = new StringBuffer();
 		for (int i = 0; i < tmp.length; i++) {
 			// check if it's a target
-			if (tmp[i].startsWith("@"))
-				continue;
+			if (tmp[i].startsWith("@")){
+				buffer.append("Target");
+				while(i < tmp.length && tmp[i].startsWith("@")) i++;
+				if(i == tmp.length) break;
+			}
 			// check if it's a hashtag
 			if (tmp[i].startsWith("#") && tmp[i].length() > 1
 					&& isLetter(tmp[i].charAt(1))) {
