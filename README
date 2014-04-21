@@ -1,5 +1,32 @@
 Twitter sentiment analysis
 
+What to do?
+- Preprocessing (Yun)
+  - target removal 
+  - url removal 
+  - slang translation 
+  - spell correction with noisy channel model
+  - word clustering
+  - ...
+- Bag of word method  (Qiren)
+  - SVM
+  - Naive Bayes
+  - Maximum Entropy
+- Sentiemnt treebank  (Xiaofan)
+  - Existing model 
+  - Bootstrapping. (like HW3) 
+- Tweet corpus (Xiaofan)
+
+
+Experiment:
+- Movie review (from original paper)
+- Movie related tweet (collecting)
+- General tweet (avaible soon)
+
+
+
+
+
 - SlangRM
   translate slangs to corresponding plain English using slang dictionary. 
   Usage: [dictName] [inputName] [outputName]
