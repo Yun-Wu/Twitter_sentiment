@@ -1,0 +1,8 @@
+Twitter sentiment analysis
+
+- SlangRM
+  translate slangs to corresponding plain English using slang dictionary. 
+  Usage: [dictName] [inputName] [outputName]
+  Example:
+  -> remember when i used to have a boyfriend and he tried to hack my account bc i do lmao¬
+  <- remember when i used to have a boyfriend and he tried to hack my account because i do laughing my a** off 
