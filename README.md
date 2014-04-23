@@ -1,6 +1,8 @@
 Twitter sentiment analysis
+==========================
 
 What to do?
+----------------------
 - Preprocessing (Yun)
   - target removal 
   - url removal 
@@ -20,13 +22,15 @@ What to do?
 
 
 Experiment:
+----------------------------------
 - Movie review (from original paper)
 - Movie related tweet (collecting)
 - General tweet (avaible soon)
 
 
 
-
+Component:
+-------------------------------------
 
 - SlangRM
   translate slangs to corresponding plain English using slang dictionary. 
