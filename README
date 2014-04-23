@@ -6,6 +6,7 @@ What to do?
   - url removal 
   - slang translation 
   - spell correction with noisy channel model
+     http://alias-i.com/lingpipe/demos/tutorial/querySpellChecker/read-me.html
   - word clustering
   - ...
 - Bag of word method  (Qiren)
