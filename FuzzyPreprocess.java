@@ -34,6 +34,7 @@ public class FuzzyPreprocess extends Preprocess{
 
 		String line = null;
 		while ((line = br.readLine()) != null) {
+
 //			String[] tmp = line.split(",");
 //			if (tmp.length < 6)
 //				continue;
@@ -52,13 +53,14 @@ public class FuzzyPreprocess extends Preprocess{
 				continue;
 			String tweet = line.substring(index+1);
 			String tag = line.substring(0, index+1);
-			if(!isAllAscii(tweet)) continue;
-			
-			writer.write(tag);
+
 			
 			tweet = filter(tweet);
 			tweet = fuzzy(tweet, dict);
 			
+			tweet = replaceNonascii(tweet);
+			
+			writer.write(tag);
 			writer.write(tweet + "\n");
 		}
 
@@ -73,8 +75,7 @@ public class FuzzyPreprocess extends Preprocess{
 		s = s.replaceAll("(.)\\1{2,}", "$1$1$1");//omggggggg->omggg
 		
 		//replace slangs according to slang dict
-		
-		
+				
 		Scanner tweetSc = new Scanner (s);
 		StringBuffer buffer = new StringBuffer();
 		
@@ -86,6 +87,17 @@ public class FuzzyPreprocess extends Preprocess{
 				buffer.append(token+" ");
 		}
 		tweetSc.close();
+		return buffer.toString();
+	}
+	
+	private String replaceNonascii(String s) {
+		StringBuffer buffer = new StringBuffer();
+		for (int i = 0; i < s.length(); i++) {
+			char c = s.charAt(i);
+			if (c < 0x7F) {
+				buffer.append(c);
+			}
+		}
 		return buffer.toString();
 	}
 	

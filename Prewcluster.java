@@ -15,8 +15,8 @@ public class Prewcluster extends Preprocess{
 	}
 	
 	public static void main(String[] args) {
-		String inputpath = "/u/ywu/nlp/final/trainingandtestdata/training.1600000.processed.noemoticon.csv";
-		String outputpath = "/u/ywu/nlp/final/trainingandtestdata//word_cluster.txt";
+		String inputpath = "/u/ywu/nlp/final/codes/tweetCorpus.txt";
+		String outputpath = "/u/ywu/nlp/final/trainingandtestdata//word_cluster1.txt";
 		Prewcluster p = new Prewcluster(inputpath, outputpath);
 		try {
 			p.process();
@@ -43,11 +43,18 @@ public class Prewcluster extends Preprocess{
 
 		String line = null;
 		while ((line = br.readLine()) != null) {
-			String[] tmp = line.split(",");
-			if (tmp.length < 6)
+//			String[] tmp = line.split(",");
+//			if (tmp.length < 6)
+//				continue;
+//			int i = line.indexOf(tmp[5].trim());
+//			String tweet = line.substring(i + 1, line.length() - 1);
+			
+			int index = line.indexOf("\t");
+			if ( index == -1)
 				continue;
-			int i = line.indexOf(tmp[5].trim());
-			String tweet = line.substring(i + 1, line.length() - 1);
+			String tweet = line.substring(index+1);
+			if(!isAllAscii(tweet)) continue;
+			
 			//guarantee that s only contains ASCII code
 			if(!isAllAscii(tweet)) continue;
 			tweet = filter(tweet);
