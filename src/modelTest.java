@@ -22,6 +22,7 @@ public class modelTest {
 	public static final int NEG = 2;
 	public static final int NET = 4;
 
+  	public static boolean binary = false; 
 
 	public static void main(String[] args) throws FileNotFoundException {
  		String fileG = null;
@@ -39,10 +40,14 @@ public class modelTest {
       		} else if (args[argIndex].equalsIgnoreCase("-input")) {
         		inputFormat = Input.valueOf(args[argIndex + 1].toUpperCase());
         		argIndex += 2;
+        	} else if (args[argIndex].equalsIgnoreCase("-binary")) {
+        		binary = true;
+        		argIndex++;
             } else if (args[argIndex].equalsIgnoreCase("-help")) {
         		help();
         		System.exit(0);
       		} else {
+      			help();
         		System.err.println("Unknown argument " + args[argIndex + 1]);
         		throw new IllegalArgumentException("Unknown argument " + args[argIndex + 1]);
       		}
@@ -57,12 +62,15 @@ public class modelTest {
 		Scanner parsed = new Scanner(new File(fileP));
          
         boolean inProcess = true;
+				int count = 0;
+			  System.out.println(count);
         while (inProcess)  {
         	int val = checkOne(input, parsed, inputFormat);
         	if (val >= 0 && val < 6) 
         		result[val]++;
         	else
         		inProcess = false;
+					System.out.println(count++);
         }
 
         printSummary(result);
@@ -126,13 +134,14 @@ public class modelTest {
 				break;
 			case SOFT:
 			    do {
-					if (parsed.hasNextLine()) {
-						String pLine = parsed.nextLine().trim();
-						while (!pLine.startsWith("(0")) {
+						String pLine = "";
+						do {
 							pText = pLine;
-							if (parsed.hasNextLine())
-						        pLine = parsed.nextLine().trim();
-						}
+							if (parsed.hasNextLine()) 
+								pLine = parsed.nextLine();
+							else 
+								return EOF;
+						} while (!pLine.trim().startsWith("(0"));
 
                         
 						System.out.println("\noriginal Text: ...");
@@ -144,10 +153,7 @@ public class modelTest {
 						
 
 						parseProb(pLine, parsed, softVector);
-					}
-					else 
-						return EOF;
-				} while (!text.endsWith(pText));
+				    } while (!text.endsWith(pText));
 				parsedSentiment = getProbSentiment(softVector);
 				break;
 			default:
@@ -182,6 +188,14 @@ public class modelTest {
 		triVec[0] = prob[0] + prob[1];  // NEG
 		triVec[1] = prob[2];            // NET
 		triVec[2] = prob[3] + prob[4];  // POS
+		
+		// generate only binary output
+		if (binary) {
+			triVec[0] += triVec[1] / 2;
+			triVec[2] += triVec[1] / 2;
+			triVec[1] = 0;
+		}
+
 		double max = 0; 
 		int maxIndex = 0;
 		for (int i = 0; i < 3; i++) {
@@ -277,6 +291,7 @@ public class modelTest {
     	System.err.println("  -fileG <filename>: Annotated golden file with sentiment information");
     	System.err.println("  -fileP <filename>: Parsed sentiment file to be evalauted");
     	System.err.println("  -input <format>: Which format to parsed file, Hard [positive/negative] or Soft[sentiment score]");
+    	System.err.println("  -binary: make binary decision on soft input");
   }
 
 }
