@@ -28,12 +28,12 @@ public abstract class Preprocess {
 		return s;
 	}
 
-	private String replaceURL(String s) {
+	protected String replaceURL(String s) {
 		// replace all urls with URL
 		return s.replaceAll("(?i)(?:https?|ftps?)://[\\w/%.-]+", "URL ");
 	}
 
-	private String replaceHTML(String s) {
+	protected String replaceHTML(String s) {
 		// replace all html entities
 		String[] html = { "&ndash;", "&quot;", "&nbsp;", "&amp;", "&gt;",
 				"&lt;" };
@@ -46,17 +46,17 @@ public abstract class Preprocess {
 		return s;
 	}
 
-	private String replaceUsername(String s) {
+	protected String replaceUsername(String s) {
 		// replace all urls with URL
 		return s.replaceAll("@[\\S]+", "target ");
 	}
 
-	private String replaceHashtag(String s) {
+	protected String replaceHashtag(String s) {
 		// replace all urls with URL
 		return s.replaceAll("#", " ");
 	}
 				
-	private String splitPunc(String s) {
+	protected String splitPunc(String s) {
 		String punctuations = "!#$%^&()_+=[]\\{}|:\"?;,.`~";
 		StringBuffer buffer = new StringBuffer();
 		boolean flag = false;
