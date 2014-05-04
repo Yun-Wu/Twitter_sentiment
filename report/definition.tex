@@ -1,0 +1,41 @@
+\section{Problem Definition and Algorithm}
+\subsection{Task Definition}
+In this paper, we address the problem of sentiment analysis of Twitter message. To be more precise, 
+given a message, we want to classify whether the message is of positive or negative (binary decision), or neutral sentiment (ternary decision). For messages conveying both a positive and negative sentiment, whichever is the stronger sentiment should be chosen. For the following two example message, we are expected to return positive on the first one and negative on the second. 
+\begin{mdframed}[
+  leftmargin=\parindent,
+  rightmargin=\parindent,
+  skipabove=\topsep,
+  skipbelow=\topsep
+  ]
+  If u haven't seen \#Rio2 yet-GO! You need to meet Gabi! Great singer. Cute. Absolutely hysterical! @KChenoweth \url{pic.twitter.com/kkVBUKjqE3}
+\end{mdframed}
+
+\begin{mdframed}[
+  leftmargin=\parindent,
+  rightmargin=\parindent,
+  skipabove=\topsep,
+  skipbelow=\topsep
+  ]
+ The rio 2 has one of the worst soundtracks evvvvaaa. I'm at Alamo @Drafthouse Cinema. @marissanicole11 \url{http://4sq.com/1kKF8qE} 
+\end{mdframed}
+
+This task is interesting because sentiment of Twitter message can be used as a barometer for public mood and opinion in diverse areas such as entertainment, politics and economics. For example, Diakopoulos and Shamma(2010) use Twitter messages to provide information on the temporal dynamic of sentiment in reaction to the debate video between Barack Obama and John McCain. There is also a report on "Berkshire Hathaway Stock Rises When Anne Hathaway Makes Headlines"\footnote{\url{http://newsfeed.time.com/2011/03/06/star-power-success-berkshire-hathaway-stock-rises-when-anne-hathaway-makes-headlines}/}, which indicates that sentiment toward public figure may have potential influence over stock market. 
+
+
+
+Working with these informal text genres presents challenges for natural language processing beyond those typically encountered when working with more traditional text genres, such as newswire data.  Tweets and texts are short: a sentence or a headline rather than a document.  The language used is very informal, with creative spelling and punctuation, misspellings, slang, new words, URLs, and genre-specific terminology and abbreviations, such as, RT for “re-tweet” and \#hashtags, which are a type of tagging for Twitter messages.  How to handle such challenges so as to automatically mine and understand the opinions and sentiments that people are communicating has only very recently been the subject of research
+
+\subsection{Algorithm Definition}
+
+Describe in reasonable detail the algorithm you are using to address this problem. A psuedocode description of the algorithm you are using is frequently useful. Trace through a concrete example, showing how your algorithm processes this example. The example should be complex enough to illustrate all of the important aspects of the problem but simple enough to be easily understood. If possible, an intuitively meaningful example is better than one with meaningless symbols. 
+\subsubsection{RNTN}
+\subsubsection{SVM}
+\subsubsection{Pre-processing}
+\begin{itemize}
+\item Twitter related features
+\item Slangs
+\item Emoticons
+\item Spelling correction
+\item Word Cluster
+\end{itemize}

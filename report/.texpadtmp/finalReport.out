@@ -1,17 +1,15 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Related Work}{}% 2
-\BOOKMARK [1][-]{section.3}{Bag of Word Classifier}{}% 3
-\BOOKMARK [1][-]{section.4}{Recursive Neural Tensor Network}{}% 4
-\BOOKMARK [1][-]{section.5}{Pre-processing}{}% 5
-\BOOKMARK [2][-]{subsection.5.1}{Twitter related features}{section.5}% 6
-\BOOKMARK [2][-]{subsection.5.2}{Slang Translation}{section.5}% 7
-\BOOKMARK [2][-]{subsection.5.3}{Emoticons}{section.5}% 8
-\BOOKMARK [2][-]{subsection.5.4}{Spelling Correction}{section.5}% 9
-\BOOKMARK [2][-]{subsection.5.5}{Word Cluster}{section.5}% 10
-\BOOKMARK [1][-]{section.6}{Experiment}{}% 11
-\BOOKMARK [2][-]{subsection.6.1}{Corpus}{section.6}% 12
-\BOOKMARK [2][-]{subsection.6.2}{Single Sentence Sentiment}{section.6}% 13
-\BOOKMARK [2][-]{subsection.6.3}{Multiple Sentences Sentiment}{section.6}% 14
-\BOOKMARK [2][-]{subsection.6.4}{Effect of Preprocessing}{section.6}% 15
-\BOOKMARK [2][-]{subsection.6.5}{General topic Tweet}{section.6}% 16
-\BOOKMARK [1][-]{section.7}{Conclusion}{}% 17
+\BOOKMARK [1][-]{section.2}{Problem Definition and Algorithm}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Task Definition}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Algorithm Definition}{section.2}% 4
+\BOOKMARK [3][-]{subsubsection.2.2.1}{RNTN}{subsection.2.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.2}{SVM}{subsection.2.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Pre-processing}{subsection.2.2}% 7
+\BOOKMARK [1][-]{section.3}{Experiment}{}% 8
+\BOOKMARK [2][-]{subsection.3.1}{Corpus}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.2}{Single Sentence Sentiment}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.3}{Multiple Sentences Sentiment}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.4}{Effect of Preprocessing}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.5}{General topic Tweet}{section.3}% 13
+\BOOKMARK [1][-]{section.4}{Related Work}{}% 14
+\BOOKMARK [1][-]{section.5}{Conclusion}{}% 15
