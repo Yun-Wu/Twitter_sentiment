@@ -1,0 +1,130 @@
+\newpage
+\section{Experiment}
+\subsection{Corpus}
+We conducted our experiment on three types of corpus.
+\begin{itemize}
+\item  The first corpus is the Stanford sentiment treebank released by Socher et. al. (2013). It is based on the dataset introduced by Pang and Lee (2005) and consists of 11,855 single sentences extracted from movie reviews. It was parsed with the Stanford parser (Klein and Mannning, 2003) and includes a total of 215,154 unique phrases from those parse trees, each annotated by 3 human judges. It is not twitter message, but would give us a comparison of RNTN and SVM on well formatted English. We refer to this corpus by \textit{Sentiment Treebank} in the reset of paper. 
+\item  The second corpus is movie reviews on Twitter, which can be divided into two categories. 
+\begin{itemize}
+\item The first categoriy is single tweet movie review taken from two specialized review accounts (@FilmReviewIn140, @MovieTwoosh). We have 364 tweets in this corpus. Such reviews are mostly well formatted, usually consist of several sentences. The author rated each movie with A to F grades. And if a movie receives a grade no worth than B, we label the review as positive, otherwise, it is negative. We refer to this corpus by \textit{moiveA} in the reset of paper. 
+\item The second category of movie reviews are collected by searching two currently popular movies names (Rio2 \& Captain American2). Such tweets are published by the generally public and they have all the noisy feature of tweet. We manually labeled this corpus. We refer to this corpus by \textit{moiveB} in the reset of paper. 
+\end{itemize}
+\item The third corpus is general tweet message. It is taken from SemEval-2013: Sentiment Analysis in Twitter Task B\footnote{\url{http://www.cs.york.ac.uk/semeval-2013/task2/index.php?id=data}}. Each of the tweet messages has been manually labeled as positive, negative, or neutral. Out of all the 5,750 messages, 2,042 are positive, 855 are negative and 2853 are neutral.  We refer to this corpus by \textit{SemEval} in the reset of paper. 
+\end{itemize}
+
+\subsection{Single Sentence Sentiment}
+We firstly evaluate both models using \textit{Sentiment Treebank}, which contains single sentence movie reviews extracted from \url{http://www.rottentomatoes.com/}. We used the same training/testing splits as in the original paper by Socher et. al. (2013). 
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{cccc}\hline
+      \multirow{2}{*}{Model} 
+      & \multicolumn{3}{c}{Accuracy} \\\cline{2-4}
+    & positive & negative & overall \\ \hline
+    RNTN  & 80.83      &   87.91   &  84.27      \\ 
+    SVM1  & ~        &          &         \\ 
+    SVM2  & ~        &          &         \\ \hline
+    \end{tabular}
+    \end{center}
+    \caption{\label{exp1_1} Binary decision}
+\end{table}
+
+We also evaluated the performance of using the emotional label as a feature to train the SVM classifier. ..
+
+
+\subsection{Multiple Sentences Sentiment}
+We then evaluates how different models works decide the sentiment of the whole twitter message. This won't affect bag-of-word method much because now we only need a larger bag. However, RNTN relies on the structural of single sentence so we need to combine the sentiment from multiple sentences within a single tweet. Here, we use the model trained on \textit{Sentiment Treebank} and tested on \textit{movieA} corpus. 
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{cccc}\hline
+      \multirow{2}{*}{Model} 
+      & \multicolumn{3}{c}{Accuracy(\%)} \\\cline{2-4}
+    & positive & negative & overall \\ \hline
+    RNTN$_{hard}$  & 70.08 	    &  81.54       &  74.18     \\
+    RNTN$_{soft}$  & 78.21     &   80.0	    &   78.85    \\ 
+    SVM1  & ~        &          &         \\ 
+    SVM2  & ~        &          &         \\ \hline
+    \end{tabular}
+    \end{center}
+    \caption{\label{exp2_1} Binary decision}
+\end{table}
+
+\subsection{Effect of Preprocessing}
+We also evaluates how much preprocessing contributed to our final performance. In this experiment, we still use the model trained on \textit{Sentiment Treebank} but tested on \textit{movieB} corpus, which contains noisy common twitter message collected by searching movie names. We evaluated both models with and without preprocessing the original corpus. 
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{ccc}\hline
+      \multirow{2}{*}{Model} 
+      & \multicolumn{2}{c}{Overall Accuracy(\%)} \\\cline{2-3}
+    & with pre-processing & w/o pre-processing \\ \hline
+    RNTN  &          &     	       \\ 
+    SVM1  & ~        &              \\ 
+    SVM2  & ~        &              \\ \hline
+    \end{tabular}
+    \end{center}
+    \caption{\label{exp5_3} Effect of preprocessing}
+\end{table}
+
+Comparing both table, we can see that preprocessing indeed helped in improving the performance.  
+
+\subsection{General topic Tweet}
+We conducted three sets of experiment over the general topic twitter corpus \textit{SemEval}. 
+\begin{itemize}
+\item Exp 1: Training on 90\% of \textit{SemEval} and testing on the rest 10\%. 
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{cccc}\hline
+      \multirow{2}{*}{Model} 
+      & \multicolumn{3}{c}{Accuracy(\%)} \\\cline{2-4}
+    & positive & negative & overall \\ \hline
+    RNTN  &          &    	    &       \\ 
+    SVM1  & ~        &          &         \\ 
+    SVM2  & ~        &          &         \\ \hline
+    \end{tabular}
+    \end{center}
+    \caption{\label{exp5_1} Experiment 1}
+\end{table}
+
+\item Exp 2: Training on \textit{Sentiment Treebank} and testing on \textit{SemEval}.  
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{cccc}\hline
+      \multirow{2}{*}{Model} 
+      & \multicolumn{3}{c}{Accuracy(\%)} \\\cline{2-4}
+    & positive & negative & overall \\ \hline
+    RNTN  & 69.83     &   70.17	    &   69.93    \\ 
+    SVM1  & ~        &          &         \\ 
+    SVM2  & ~        &          &         \\ \hline
+    \end{tabular}
+    \end{center}
+    \caption{\label{exp5_2} Experiment 2}
+\end{table}
+
+
+\item Exp 3: Training on \textit{Sentiment Treebank}, label the training set of \textit{SemEval}, retrain the model with both \textit{Sentiment Treebank} and the testset of \textit{SemEval}, and test the new model on the test set of \textit{SemEval}. 
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{cccc}\hline
+      \multirow{2}{*}{Model} 
+      & \multicolumn{3}{c}{Accuracy(\%)} \\\cline{2-4}
+    & positive & negative & overall \\ \hline
+    RNTN  &          &     	   &      \\ 
+    SVM1  & ~        &          &         \\ 
+    SVM2  & ~        &          &         \\ \hline
+    \end{tabular}
+    \end{center}
+    \caption{\label{exp5_3} Experiment 3}
+\end{table}
+
+\end{itemize}
+
+
+
+
+
+
+

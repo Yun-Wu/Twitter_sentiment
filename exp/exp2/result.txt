@@ -1,0 +1,27 @@
+EVALUATION SUMMARY
+Tested 82600 labels
+  66258 correct
+  16342 incorrect
+  0.802155 accuracy
+Tested 2210 roots
+  976 correct
+  1234 incorrect
+  0.441629 accuracy
+Label confusion matrix: rows are gold label, columns predicted label
+       323      1294       292        99         0
+       161      5498      2993       602         1
+        27      2245     51972      2283        21
+         3       652      2868      7247       228
+         3       148       282      2140      1218
+Root label confusion matrix: rows are gold label, columns predicted label
+        44       193        23        19         0
+        39       451        62        81         0
+         9       190        82       101         7
+         0       131        30       299        50
+         0        36         8       255       100
+Approximate Negative label accuracy: 0.912008
+Approximate Positive label accuracy: 0.930750
+Combined approximate label accuracy: 0.923128
+Approximate Negative root label accuracy: 0.879081
+Approximate Positive root label accuracy: 0.808266
+Combined approximate root label accuracy: 0.842756
