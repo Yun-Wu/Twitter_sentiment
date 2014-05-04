@@ -33,8 +33,9 @@ We also evaluated the performance of using the emotional label as a feature to t
 
 
 \subsection{Multiple Sentences Sentiment}
-We then evaluates how different models works decide the sentiment of the whole twitter message. This won't affect bag-of-word method much because now we only need a larger bag. However, RNTN relies on the structural of single sentence so we need to combine the sentiment from multiple sentences within a single tweet. Here, we use the model trained on \textit{Sentiment Treebank} and tested on \textit{movieA} corpus. 
+We then evaluates how different models works on deciding the sentiment of the whole twitter message. This won't affect bag-of-word method much because now we only need a larger bag. However, RNTN relies on the structural of single sentence so we need to combine the sentiment from multiple sentences within a single tweet. Here, we use the model trained on \textit{Sentiment Treebank} and tested on \textit{movieA} corpus. 
 
+As for the RNTN model, we evaluated two way to combine the sentiment of the whole tweet (multiple sentences). The first way is to make hard (binary) decision on single sentence ( either positive or negative), then use majority vote to decide the sentiment of the whole sentence. Soft information (probability) is only used to break a tie. The second way is fully relying on soft (probability) information. For each sentence, we generate a 5 element vector for the probability of the having the corresponding sentiment (very negative, negative, neutral, positive, very positive). We add the vector for all the sentences together and make final decision based on the combined vector. 
 \begin{table}[H]
   \begin{center}
     \begin{tabular}{cccc}\hline
@@ -49,6 +50,8 @@ We then evaluates how different models works decide the sentiment of the whole t
     \end{center}
     \caption{\label{exp2_1} Binary decision}
 \end{table}
+
+From the result, we can see that hard decision combining has much worse performance than soft decision combining in positive sentiment but slightly better on negative sentiment. I guess this is because the RNTN model tend to label a sentence as negative. Soft combining outperform hard combining by more than 4\% in the overall result. This is reasonable because more information is available in soft decision combining. We use soft mode in the following experiments. 
 
 \subsection{Effect of Preprocessing}
 We also evaluates how much preprocessing contributed to our final performance. In this experiment, we still use the model trained on \textit{Sentiment Treebank} but tested on \textit{movieB} corpus, which contains noisy common twitter message collected by searching movie names. We evaluated both models with and without preprocessing the original corpus. 
