@@ -1,0 +1,15 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Problem Definition and Algorithm}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Task Definition}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Algorithm Definition}{section.2}% 4
+\BOOKMARK [3][-]{subsubsection.2.2.1}{SVM}{subsection.2.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.2}{RNTN}{subsection.2.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Pre-processing}{subsection.2.2}% 7
+\BOOKMARK [1][-]{section.3}{Experiment}{}% 8
+\BOOKMARK [2][-]{subsection.3.1}{Corpus}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.2}{Single Sentence Sentiment}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.3}{Multiple Sentences Sentiment}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.4}{Effect of Preprocessing}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.5}{General topic Tweet}{section.3}% 13
+\BOOKMARK [1][-]{section.4}{Related Work}{}% 14
+\BOOKMARK [1][-]{section.5}{Conclusion}{}% 15
