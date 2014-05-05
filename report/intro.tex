@@ -1,16 +1,17 @@
 \section{Introduction}
 
 Microblogging websites (such as Twitter, Weibo) have gained popularity in recent years. People can easily post real time, short message to express their opinions. 
-Sentiment of microblog is of particular interest because such information is valuable to both consumer andmanufactures.
+Sentiment of microblog is of particular interest because such information is valuable in diverse areas such as entertainment, politics and economics.
 
-Most of existing works are based on bag of words classifiers. People propose and evaluate different features to improve the performance of bag-of-words model. Such classifiers can work well in longer documents by relying on a few words with strong sentiment such as "great" or "awesome". However, bag-of-words models have difficulties in handling in negation and comparisons, which involves the structure of sentence. To further improve the performance, new compositional models which capture the structure of sentences are needed. 
+However, sentiment analysis over twitter message is a challenging task due to the noisy nature of it. 
+It contains ungrammatical sentences, typos, creative punctuation, slang, new words, URLs, and genre-specific terminology and abbreviations, such as, RT for “re-tweet”, \#hashtags, @mentions. 
 
-Socher et al., recently recently proposed a new model called the Recursive Neural Tensor Network (RNTN) to capture the compositional effects with higher accuracy. 
-Recursive Neural Tensor Networks take as input phrases of any length. 
-They represent a phrase through word vectors and a parse tree and then compute vectors for higher nodes in the tree using the same tensor-based composition function. (Socher et al., 2013). They compared their model with standard recursive neural network (RNN), maxtrix-vector RNNs, Navie Bayes and SVM. Their experiment shows that RNTN has the best performance in predicating fine-grained sentiment for all nodes. They also claim that RNTN can accurately captures the sentiment change and scope of negation. 
+Most of existing works are based on bag of words classifiers. Different features to improve the performance of bag-of-words model have been proposed. Such classifiers can work well in longer documents by relying on a few words with strong sentiment such as "great" or "awesome". However, bag-of-words models have difficulties in handling in negation and comparisons, which involves the structure of sentence. 
 
-However, the data set used in the above paper is bunch of single sentences extracted from well formatted movie reviews, which is quite different from twitter message. One significant feature of tweet is noisy. It contains ungrammatical sentences, typos, urls, hash tag, target etc. In this paper, we explore the possibility of applying the RNTN model on twitter message. We collected twitter message from different sources and labeled some of them. We preprocessed the twitter corpus to better present the structure of the sentences and deleted some information which is not related the to the structure of the sentence such as urls.  
+Recursive Neural Tensor Network (RNTN) model is recently proposed to capture the compositional effects with higher accuracy. Recursive Neural Tensor Networks take as input phrases of any length. They represent a phrase through word vectors and a parse tree and then compute vectors for higher nodes in the tree using the same tensor-based composition function. (Socher et al., 2013). The authors claim that RNTN can accurately captures the sentiment change and scope of negation. However, the data set used in the above paper is bunch of single sentences extracted from well formatted movie reviews, which is quite different from twitter message. 
 
-Our experiment indicates bla bla bla. 
+In this paper, we evaluate bag-of-word model and RNTN model on tweet message to compare the performance of the two types of model. We collect twitter message from different sources and labeled some of them. Such corpus has been pre-processed according to the natural of different models. We conduct extensive experiment ...
 
+The paper is organized as follows. Section 2 defines the task we are solving and explains our approach. 
+Section 3 presents and discusses experiment results. Section 4 details related work and Section 5 concludes the paper.
 \newpage

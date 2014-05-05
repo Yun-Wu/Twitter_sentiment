@@ -103,8 +103,23 @@ We conducted three sets of experiment over the general topic twitter corpus \tex
     SVM2  & ~        &          &         \\ \hline
     \end{tabular}
     \end{center}
-    \caption{\label{exp5_2} Experiment 2}
+    \caption{\label{exp5_2_1} Experiment 2.1}
 \end{table}
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{ccccc}\hline
+      \multirow{2}{*}{Model} 
+      & \multicolumn{4}{c}{Accuracy(\%)} \\\cline{2-5}
+    & positive & negative & neutral & overall \\ \hline
+    RNTN  & ~        &   ~	   &   ~          &    \\ 
+    SVM1  & ~        &          &             &   \\ 
+    SVM2  & ~        &          &             & \\ \hline
+    \end{tabular}
+    \end{center}
+    \caption{\label{exp5_2_2} Experiment 2.2}
+\end{table}
+
 
 
 \item Exp 3: Training on \textit{Sentiment Treebank}, label the training set of \textit{SemEval}, retrain the model with both \textit{Sentiment Treebank} and the testset of \textit{SemEval}, and test the new model on the test set of \textit{SemEval}. 
@@ -120,7 +135,22 @@ We conducted three sets of experiment over the general topic twitter corpus \tex
     SVM2  & ~        &          &         \\ \hline
     \end{tabular}
     \end{center}
-    \caption{\label{exp5_3} Experiment 3}
+    \caption{\label{exp5_3_1} Experiment 3.1}
+\end{table}
+
+
+\begin{table}[H]
+  \begin{center}
+    \begin{tabular}{ccccc}\hline
+      \multirow{2}{*}{Model} 
+      & \multicolumn{4}{c}{Accuracy(\%)} \\\cline{2-5}
+    & positive & negative & neutral & overall \\ \hline
+    RNTN  & ~        &   ~	   &   ~          &    \\ 
+    SVM1  & ~        &          &             &   \\ 
+    SVM2  & ~        &          &             & \\ \hline
+    \end{tabular}
+    \end{center}
+    \caption{\label{exp5_3_2} Experiment 3.2}
 \end{table}
 
 \end{itemize}
