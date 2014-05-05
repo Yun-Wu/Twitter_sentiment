@@ -81,7 +81,7 @@ negative	apple ceo apologizes for error-ridden new map app: apple ceo tim cook a
 neutral	monta ellis / ellis provided just five points on 2-of-13 shooting thursday national basketball association playersnews. 
 neutral	when i teach a basketball in my own school, we're going to spend the 1st day watching larry bird videos, & the rest will take care of itself. 
 objective-OR-neutral	at&t offers free cloud storage for ios and android at&t on thursday announced a new service it calls at&t locker th. 
-positive	we are here target for our 12th anniversary celebration. you still have time to make it - 6620 . king dr. 
+positive	we are here target for our 12th anniversary celebration. you still have time to make it. 
 objective-OR-neutral	target i told you shane would get his 5th-star on rivals before signing day. 
 positive	love how i skipped every category of the nta's besides the soaps. couldn't give half a fuck if everything else went off the air tomorrow. 
 objective	new york giants: game-by-game predictions for the 2nd half of the season. 
@@ -233,7 +233,7 @@ negative	sundays in the sag is like a friday in idaho.boring as fuck!
 positive	if the steelers play as good as they did sunday i say keep the bee uniforms on all the way to the superbowl steelers. 
 neutral	harry redknapp is being heavily linked with the position as blackburn manager today. however, quite pathetic really may have begun courting him already. 
 positive	year old i'm excited for royal rumble might book that monday off work so i can watch it. 
-positive	procrastinating. i need to get ready for the 6th district chicago police rally against violence. chi-town cheer will be performing. king dr. 
+positive	procrastinating. i need to get ready for the 6th district chicago police rally against violence. chi-town cheer will be performing.
 negative	will you have lunch with me tomorrow night?-random hoe that's hitting on castle "nooo"-beckett. 
 positive	target happy 20th birthday nick j! hope it's one of the best! you've accomplished so much already. and so much more to come. love you! 
 positive	factsaboutme when i was born. on that day , it was the 2nd day of chinese new year. immediately , i gotten lots of redpacket :. 
@@ -278,9 +278,9 @@ neutral	hey nevada tweeps remember tomorrow is the last day for early voting! re
 neutral	observers from un, eu, cw, send to coni , according to this observers what the maldivian have seen live and on tvs on 7 feb are day dream. 
 objective	amazon has opened an online store for black friday 22 days before the shopping event is scheduled to take place. 
 negative	i think i may be the only person around not excited that beyonce is the half time performer for the superbowl. 
-neutral	chicago: go see target lovesgotaholdonme sat october 27th 7p at the haroldwashingonculcntr 47th & king dr. 
+neutral	chicago: go see target lovesgotaholdonme sat october 27th 7p at the haroldwashingonculcntr 47th. 
 positive	target happy thursday! enjoyed the show so much last night watched 4x. have a great day my greek! 
-objective-OR-neutral	a three-month-old boy was found abandoned at a platform of the chhatrapati shivaji terminus on saturday night.twitter.com/qffifznn. 
+objective-OR-neutral	a three-month-old boy was found abandoned at a platform of the chhatrapati shivaji terminus on saturday night. 
 neutral	highlight of monday was chucking a mattress down the stairs which hit eleanor around the face, causing her to fall down the stairs. 
 negative	the fact that i have no plans tomorrow night & it's my last night in fl for a minute <<<. 
 objective-OR-neutral	boogie song of the day.oh ricky martin: que mas the happy sunday 2 everyone recovering from halloween party hangovers. 
@@ -585,7 +585,7 @@ positive	goodnight! big day! tomorrow i'm at the school to 3:00 !
 positive	today is national kissing day because it's no work day tomorrow! 
 objective	come meet members of the "1980 dawgs" in athens this weekend at the red zone! friday, 3pm - 6pm: coach vince. 
 positive	this time tomorrow night ill be partying it up in chapel hill i am happy. 
-objective-OR-neutral	dublin's street pub come join us for open mic. thursday, as the party continues here at dublin"s street pub. $ 
+objective-OR-neutral	dublin's street pub come join us for open mic. thursday, as the party continues here at dublin"s street pub.  
 neutral	oh man i thought the deadline for act was tomorrow i have until the 9th bless. 
 objective	1st movie of the night: the vow. 
 objective-OR-neutral	text to speech will participate in the "love in asia" tomorrow on kbs world. 
@@ -593,15 +593,14 @@ objective	milan-genoa: 22 rossoneri: milanello - 22 players have been called up 
 objective-OR-neutral	target is addicted to act. she just took one on saturday. and she just signed up for a third test. 
 negative	in 27 hours i know if I am going to see the boys live on may 1st! Oh my gosh girl I am sooo scared for tomorrow! 
 positive	awesome response guys! the correct answer is: sam gagner and brendan smith. all of you will be put into the draw this coming thursday! 
-neutral	not that i want to tip my hand. but there will be moves in both portfolio's tomorrow morning at 8:35 am home run and follow the $. 
-positive	in my Tough Luck guys talks about away from computer vs mufc i know guys you cant wait till saturday i am happy. epl i love it.. 
+neutral	not that i want to tip my hand. but there will be moves in both portfolio's tomorrow morning at 8:35 am home run and follow the. 
+positive	in my Tough Luck guys talks about away from computer vs mufc i know guys you cant wait till saturday i am happy. epl i love it.
 objective-OR-neutral	for second time, eagles make stop -- and commit a penalty. pi on kendricks gives atlanta another 1st down. groundhog day lives. 
-positive	target would you be up for full day of movies at mine on thursday? i am happy. so far tarzan and the notebook is on the list xd. 
+positive	target would you be up for full day of movies at mine on thursday? i am happy. so far tarzan and the notebook is on the list. 
 positive	like, "sweet you." "happy valentines day." . "i'll meet you at the shop every tuesday.". 
 neutral	watched muse on the jonathan ross show last night and promptly had nightmares about screwing everything up on wednesday! 
 positive	rivers to gates, for only the 3rd time this season. keep it up chiefs, fantasy teams need you. 
-negative	arianators please help me. i'm a girl who's body is very sore and just asking for ariana & jennette's goodluck for tomorrow. please :. 
-objective	google+ hangout with : october 27th! 2pm pacific / 5pm eastern via askllcoolj llcooljhangout kpoptv 2pm. 
+negative	arianators please help me. i'm a girl who's body is very sore and just asking for ariana & jennette's goodluck for tomorrow. 
 objective-OR-neutral	ac milan reportedly want miralem pjanic to join the san siro in january 
 positive	got to remember to bring dionje candy tomorrow, laughing out loud he got mad at me today! 
 negative	watched the vow for the 5th time and i'm still tearing. what's wrong with this movie. it's tooo. oh my God i can't even. 
@@ -630,8 +629,8 @@ negative	fuck you, band that covered it on friday night, and fuck you ricky mart
 objective-OR-neutral	at a live basketball fantasy draft.sort of. i got the 7th pick. got melo, monta ellis, iguodala and ibaka so far. 
 objective-OR-neutral	target yeah i say, mid january for a new single. right in time for the superbowl& video at the end of january leading into superbowl. 
 objective	5th floor paterno with target target target we're going to be productive from now on. 
-positive	february 12th is a nice time to release it. its the week of the grammys too. albums "sell" that week. 
-positive	the landlord from will ferrell.avi via target this will cure the monday blues. funny funny shit. 
+positive	february 12th is a nice time to release it. its the week of the grammys too. albums "sell" that week.
+positive	the landlord from will ferrell.avi via target this will cure the monday blues. funny funny shit.
 negative	cofield should have hopped off the deathmatch sticks after his 3rd year. niggas was tired of him lol. 
 negative	you'd think after not replying to the 3rd text the vagina face would get that i fucking hate him. 
 positive	watching "the vow" for the 1st time! i i love it. it! already cried 3 times! 
@@ -673,9 +672,9 @@ neutral	[pagasa] 6:39am intermittent light to occasionally moderate rains over s
 positive	applications are due this friday november 2! let this video of yes prep senior signing day inspire you as. 
 objective	apple ceo apologizes for error-ridden new map app: apple ceo tim cook apologized friday for the co. 
 objective	jimmy kimmel live - axl rose, part 1: part 1 of jimmy kimmel's interview with axl rose.added: thu oct 25 11:02:2. 
-objective-OR-neutral	watch live queen of the south vs edinburgh cit -live-queen-of-the-south-vs-edinburgh-city-november-03-2012/. 
+objective-OR-neutral	watch live queen of the south vs edinburgh cit. 
 negative	i'm listening to the a capellas of the 2nd law and appreciating how bad ass bellamy is. not that i didn't already know from his other albums. 
-neutral	sophia grace and rosie look back at highlights from their long singing career (it's their 1st anniversary on. 
+neutral	sophia grace and rosie look back at highlights from their long singing career. it's their 1st anniversary on. 
 positive	happy valentines day i love it. !.yes, in brazil, it is celebrated on june 12. your mind = blown ! 
 negative	refuse to admit that it's 3rd year. bring on my groundhog day. 
 positive	cried for every episode of dream high 2 starting from episode 13! t-t tomorrow i shall watch the last and final episode! 
@@ -737,10 +736,10 @@ positive	february 13th "desperation day" the most awesome day of all time true_s
 neutral	target rivers may have just entered Come on man territory with that int in the end zone -- chargerfansbooing why did that need a hashtag. 
 objective	to follow up on last tweet, bills double team kyle williams expected to play sunday. just resting the ankle during the week. 
 objective	thats like the 5th time the texans hit the ball so flacco can't throw it. 
-negative	indian air force may not go with israel a second time -air-force-avoids-israel-goes-global-aerostats?odyssey=nav%7chead. 
-objective	raw 1,000: rock to get a World Wrestling Entertainment championship match at the royal rumble this january -2i. 
+negative	indian air force may not go with israel a second time. 
+objective	raw 1,000: rock to get a World Wrestling Entertainment championship match at the royal rumble this january. 
 objective-OR-neutral	bumper day for target in target tomorrow - extract from new tom wolfe + sylvie simmons on leonard cohen. 
-positive	[$] black friday best price underwater case for the following olympus evolt digital slr. -friday-best-price-underwater-case-for-the-following-olympus-evolt-digital-slr-cameras-e3-e420-e520-e510-e410-e500/. 
+positive	black friday best price underwater case for the following olympus evolt digital slr. 
 negative	oh no she didn't! bgv rt"target i can't wait to make target listen to two hours of taylor swift during our drive tomorrow. 
 negative	actually, i'd like to omit the vaccines from my top 10 and move kasabian in at 9th, with the enemy dropping to 10th. told you i can't do it. 
 positive	target i would love the audio book 'the art of war' by sun tzu, as read by jim white! 
@@ -1822,10 +1821,10 @@ neutral	watching puss in boots & ghost rider: spirit of vengeance with the famil
 objective-OR-neutral	fright night with meek mill & machine gun kelly at teaneck national guard armory october 27th at 7pm bbod will be opening hit us for tickets. 
 neutral	winter storm watch for portions of the wdbj7 viewing area until 8:00am wednesday. 
 neutral	gary carter on 2nd screen: content is floating free from the distribution platform. opportunity for producers, threat for broadcasters. 
-objective	truck will be doing a private event and the cart will be at the lent space on 6th ave and canal st. 
-neutral	is it weird that i still remember that josh bradley's birthday is on the 15th?ok. 
-neutral	this is the happz for this friday movement fam.30pm at sylvia park (meet up in the open space below the. 
-negative	this is the 1st halloween my kids didn't go trick or treating. kind of sad they are too old for it now because . 
+objective	truck will be doing a private event and the cart will be at the lent space on 6th ave and canal street. 
+neutral	is it weird that i still remember that josh bradley's birthday is on the 15th?
+neutral	this is the happz for this friday movement fam.30pm at sylvia park (meet up in the open space below the.
+negative	this is the 1st halloween my kids didn't go trick or treating. kind of sad they are too old for it now. 
 positive	hung out with my housemate more 
 neutral	p&g shifts top executives to singapore: singapore: us consumer giant procter and gamble said friday it wil. 
 objective	knicks vs. hawks: atlanta, new york battle for playoff positioning .: the knicks and the hawks battle sunday . 
@@ -2005,9 +2004,8 @@ objective-OR-neutral	flexthursday ! this thursday!wit target target crows nest w
 positive	hope to see you at our social media week event in glasgow tomorrow. -crowd-distribution-and-sea-wall/ smwfilmcamp. 
 positive	i find it funny that this is the 5th year in a row that brad paisley and carrie underwood have hosted the cmas. 
 neutral	hold up! i can't make plans for tomorrow. tomorrow it's game time. 3:30pm >.> knicks vs heat. 
-neutral	jennifer aniston & drew barrymore: fill in the blank!: at the 2012 lacma art + film gala on saturday, jennifer . 
+neutral	jennifer aniston & drew barrymore: fill in the blank!: at the 2012 lacma art + film gala on saturday, jennifer. 
 positive	tomorrow i plan on playing blackops zombies, gears3, and maybe Modern Warfare 3 all day thanks to my today live code. anyone down for some gaming? 
-objective-OR-neutral	
 negative	if barack obama cared 4 the people of Nice job he would lift union ban like george bush did 3days after katrina. sandy october failed leadership. 
 neutral	can someone bless with mr wattecamps homework tomorrow. 
 negative	this time tomorrow, target and i will be well on our way to starkville for a sick weekend.the usm game is going to be atrocious. 
@@ -2071,8 +2069,8 @@ positive	in honor of national margarita day come and enjoy $3 margarita's, and t
 positive	twitter: "we found someone you may know on twitter! kevin rudd target - federal member for griffith." straya. 
 objective-OR-neutral	the metlife blimp was flying over starkville, ms today. probably getting ready for the msu game saturday. 
 positive	friday - yearbook ordering deadline! your child is going to want one of these, and they are so easy to order online. 
-positive	robert pattinson paid tribute to his bel ami co-star uma thurman as he presented her with an award at the 19th women in hollywood ce. 
-negative	target akin and murdoch are scum, but rape jokes aren't much better brah. they may just be just a 
+positive	robert pattinson paid tribute to his bel ami co-star uma thurman as he presented her with an award at the 19th women in hollywood. 
+negative	target akin and murdoch are scum, but rape jokes aren't much better brah. 
 positive	the nicest teacher in the world (mr. gave us an extra day for our homework and i still didn't do it! guess who's waking up early tomorrow. 
 objective	i'm in north carolina with target we play at elon university tomorrow! 
 objective-OR-neutral	-10 in the last round. started the day at tied 7th place ended up winner. nick watney. 
@@ -2368,7 +2366,7 @@ objective-OR-neutral	went to sylvia park for the 2nd time in my life today, and 
 positive	seeing carrie underwood on the cma's is making me beyond excited for saturday night, carrie and hunter hayes, here we come! i am happy. 
 positive	target you may have a few extra followers from glasgow scotland tonight. we all agree max would make a better girlfriend than the blonde girl. 
 positive	after a truly amazing & blessed 1st day target london conference we are soon to embark upon day 2!come & take time out to learn truth. 
-neutral	hello my navy yard and coast guard friends. tomorrow we will be at truckeroo. from 11am to 11pm. at the fairground on half st. 
+neutral	hello my navy yard and coast guard friends. tomorrow we will be at truckeroo. from 11am to 11pm. at the fairground on half street. 
 objective-OR-neutral	van pelt birdies the 17th hole to get to -21. he needs to birdie the 18th hole in order to force a playoff with nick watney cimbclassic. 
 positive	new post on blog! hope to see you all this saturday target cesena! with target family too!. 
 positive	i love the drive to starkville can't wait till i make it into the college in january achiversparadise onthereal. 
@@ -2747,7 +2745,7 @@ negative	mommy is leaving on sunday. didn't say shit. like i knew she was leavin
 positive	come spend halloween with us at volare! the robbie bartlett trio will be here for your enjoyment! wednesday is. 
 positive	listening to kim So hyun's ost for moon-sun and thinking about how i'm going to see his beautiful face on the big screen tomorrow :. 
 positive	x factor, home made goodies, jacuzzi and sacha baron cohen. perfect saturday evening with targe. 
-neutral	mark dekanich made 35 saves sunday as the st. john's icecaps defeated the connecticut whale 3-2 in the american hockey league. 
+neutral	mark dekanich made 35 saves sunday. john's icecaps defeated the connecticut whale 3-2 in the american hockey league. 
 positive	please be reminded that all proceeds from the kickball tournament benefits the 5th annual "i know i can" back-to-school drive aug 25. 
 negative	although there was that one time he finished 3rd and cannavaro finished 1st. yes, fabio cannavaro. 
 objective-OR-neutral	band practice tonight! working on the acoustic set for the hospice benefit on sat for patramsey. talahasseeevents tallahassee. 
@@ -2792,7 +2790,7 @@ neutral	don't forget, i'll be at volare tonight and tomorrow for my birthday. in
 positive	like a good neighbor state farm is there, with an alarm clock that'll actually wake me up tomorrow. 
 objective-OR-neutral	natalie's visitation is at 3-7 tomorrow at zeimer's east on hebron, the funeral is at 10 at holy rosary on saturday. message me if you have ?. 
 neutral	sept 27th | cherub, pell | ricks cafe | $5 advance tickets | get at me before the date of show cause the price will go up. 
-objective	attn: there will be a candlelight vigil held for mitch tonight at i am happy.m in huntington beach at main st. & 12th. 
+objective	attn: there will be a candlelight vigil held for mitch tonight at i am happy.m in huntington beach at main street. 
 positive	my infant son is definitely keeping wife and up "up all night" - a little sleepy today. the book "happiest baby on the block" has been very helpful. 
 negative	amanda thinks that because she's not "going to the oscars" is a valid excuse for her not washing her hair since thursday. 
 positive	target could you wish a friend happy birthday? i am happy. his name is laurin! it's his 18th birthday and he's a big fan. thanks in advance! 
@@ -3000,7 +2998,7 @@ objective-OR-neutral	nfu unchanged for the 4th successive game tonight: nicklin,
 positive	all right run it mek we done it! ambozia july 7 at oneil's place maddd rasss. 
 positive	can't wait for skyfall 1st of nov! is listening to the ost on spotify considered a spoiler? i i am happy. fb. 
 objective-OR-neutral	ricky ponting was pulled out of a sheffield shield game on friday with a hamstring injury. 
-positive	i'm in petrolia. the sun's out, isn't that bright enough for you? :. 
+positive	i'm in petrolia. the sun's out, isn't that bright enough for you?
 positive	target huum if you're hungry, come to tunisia we have delicious food here! huum nialler always eat i am surprised. c'mon! 
 objective-OR-neutral	world bank earmarks $245 million for myanmar, outlines 18-month work plan: the world bank said on thursday it ha. 
 objective	knickers off ready when I come home city are the 6th team into the capital one cup quarter finals. 
@@ -3248,7 +3246,7 @@ neutral	just saw the today show with 98 degrees from friday.jeff timmons got so 
 objective-OR-neutral	just turned tele back on and caught the end credits to saturday kitchen live for f**k's sake failure. 
 positive	on modern family, when sofia yelled ''c'mon estella'' and ran into the pool, oh my God i laughed like never before. 
 positive	target awesome round and congratulations on your 1st tour victory! enjoy the ritz carlton and kapalua plantation course.you've earned it! 
-neutral	next gigs will be 10/23 at pocket sandwich theater with singapore slingers and 11/7 at bryan st. tavern for wed. night jazz with my quintet. 
+neutral	next gigs will be 10/23 at pocket sandwich theater with singapore slingers and 11/7 at bryan street. tavern for wed. night jazz with my quintet. 
 positive	just had the amazing target pick up her bespoke fascinator for derby tomorrow, love this time of year melbcupcarnival. 
 positive	tomorrow night at the roxy come check out the saturdays target you won't be disappointed! 
 positive	stimulating & promising speech of the world bank's president jim yong kim in the annual meeting held in tokyo on oct 12. 
@@ -3485,7 +3483,7 @@ objective	at the end of the third the new mexico stars lead the wichita wild 39-
 objective-OR-neutral	dealbook: clearwire is sought by sprint for spectrum - sprint disclosed on thursday that it had offered to buy a sta. 
 objective	h&m's fashion against aids collection is available on april 26th. 25% of the sale price goes to aids prevention. 
 neutral	the disco balls are being polished.are you ready!?! this thursday night! join us at the adrienne arsht center. 
-objective-OR-neutral	angelito casts and pbbunlimited big4 with kevin, divine, deniesse and ryan are guests tomorrow night sa kick off. - adm. 
+objective-OR-neutral	angelito casts and pbbunlimited big4 with kevin, divine, deniesse and ryan are guests tomorrow night sa kick off. 
 negative	mommy said i have to go to maxwell monday , lmfaooo the fuck i don'. 
 neutral	30 free tickets to watch saigon heat vs singapore slingers in singapore,4pm apr 29 for the first 30 fans email to communitytarge. 
 neutral	star's office hours are in scc room 324 sunday and monday: 1- i am happy.m, tuesday-thursday 1-9pm come talk to us about anything! 
@@ -4170,8 +4168,8 @@ positive	target guess what I am working in the day on 17th meaning you can come 
 objective	who going to see kevin hart on the 8th ? 
 neutral	today: republicans might hate obama's health care law, but fighting the details is tough. 
 neutral	the target take on canada tonight at 9pm est in a warm-up before the rugby world cup - if you have direct tv. 
-objective	michael jackson doctor trial to begin jury selection thursday: jury selection in the manslaugher case against dr. 
-negative	are you waiting for nokia n9 getting released in us. well, that may not happen. i am sad. -news/nokia-n9-meego-smartphone-release-date.html. 
+objective	michael jackson doctor trial to begin jury selection thursday: jury selection in the manslaugher case against doctor. 
+negative	are you waiting for nokia n9 getting released in us. well, that may not happen. i am sad.
 negative	i honestly cannot believe why australia aren't taking target to the rugby world cup. might not be 1st choice, but still a talent. 
 objective	thoughts and prayers with pavol demitra's family today, and the entire hockey team who perished in a plane crash today. 
 objective-OR-neutral	big brother last night on channel 5 peaked at 2 million and beat bbc two, itv1 and c4 in it's slot. plus can't be bothered final tomorrow! 
@@ -4222,7 +4220,7 @@ positive	it still hasn't hit me yet that tomorrow is steelers & ravens day.
 positive	sometimes you just got to put the michael jackson song from free willy on repeat all morning. 
 positive	our new dance instructor for clubfitness has toured with beyonce! you know our beyonce themed night is going to be crazy! 
 negative	oh my God worst last 10 days in a while. looking forward to true blood to cheer me up tonight. 
-objective-OR-neutral	sept 19 rt target i'm very mad they just showed a "sons of anarchy" commercial & 
+objective-OR-neutral	sept 19 rt target i'm very mad they just showed a "sons of anarchy" commercial.
 positive	i may love asians from japan! but i have a girl that i'm going to marry. believe it! she's a ghetto ass short girl that's clumsy as fuck lol. 
 positive	saw "rise of the planet of the apes" with the girlfriend last night.it was a pretty damn good movie.y'all should go check it out. 
 positive	today's friendly fire number 1 goes to target because he's So good at computers that steve jobs is worried about job security. 
@@ -4247,7 +4245,7 @@ positive	saadra: the droid bionic may be the most hyped phone in the history of 
 negative	goodnight,irene.al,you are easily amused. this club stinks.i think that the brewers may upset the apple cart and win the nl pennant. 
 negative	remembering former st. louis blues star pavol demitra today. he was a true talent & class guy all the way. a very sad loss for his family. 
 neutral	un chief heads to japan as nuclear crisis simmers: un chief ban ki-moon arrives in japan on sunday, where he pla. 
-objective-OR-neutral	tiger woods mistress charged with dui: you may remember jamie jungers as tiger wood's fourth mistress to come ou. 
+objective-OR-neutral	tiger woods mistress charged with dui: you may remember jamie jungers as tiger wood's fourth mistress to come. 
 negative	we will explain the true cause of the london riots on the front page of the sun : immigrants. 'hero police' will also get a headline. 
 objective	wales' rugby world cup squad will be named at 9:00pm tonight, melbourne time. we'll soon find out whether the. 
 positive	in barcelona tomorrow. time to bring out the tees and shorts i am happy. 
@@ -4381,12 +4379,11 @@ positive	really looking forward to the passion 4 pink event tomorrow night at me
 objective-OR-neutral	downloaded joseph prince - keep your eyes on jesus - 10 jun 2012 with realplayer. 
 positive	when did wilt chamberlain have time for basketball?: tuesday marked the birthday of greatest athlete to come fro. 
 objective-OR-neutral	sat's kids' club is a halloween special! labyrinth with spooky treasure hunt+ activities from 10:30am. directed by jim henson. 
-positive	i will be performing at the don't care star on september 1st hope you all can come thru!twitter.com/uxzjcsul. 
-objective	opening night warriors vs. suns: second half game thread: 0:00 remaining in the 2nd 1 2 3 4 total golden st. 
+positive	i will be performing at the don't care star on september 1st hope you all can come through!
 neutral	may as well sign up scott dann and affirmative johnson whilst your at it. 
 objective	two guest list tickets to give away for joan armatrading's show at Stop That david's on thursday keep it locked to find out more! 
 positive	ok, going to be with target on saturday at social media bacolod, to meet my crush! xd! 
-positive	tonight $2 tipsy tuesdays at 1433 arch street at big bangs good food, music, and $2 drinks at ( 15th & arch. 
+positive	tonight $2 tipsy tuesdays at 1433 arch street at big bangs good food, music, and $2 drinks at  15th & arch. 
 negative	steve emerson interview on shameful us response to islamist riots on sun television : ipt in the news : the investigat. 
 positive	lorenzo brown gave nervous ncstate fans one less thing to worry about on tuesday in spain. 
 negative	just watched the whole 2nd season of breakout kings only to find out they canceled the fucking show -.-. 
@@ -4399,7 +4396,7 @@ positive	me myles and will are all sat in chesters bed with chester on the floor
 objective-OR-neutral	drexel cancels classes. drexel medicine clinic hours are canceled all day monday & on tuesday until at least 12pm due to weather. 
 positive	asikkk nanti di konser java jazz ada kak sierranya,hmm it's a good news!*lirik targe. 
 objective-OR-neutral	e l james is writing a 4th book to the fifty shades series! it will be out before christmas i am happy. 
-objective-OR-neutral	target with the 28th pick.the packers select some fat punter out of wichita st. 
+objective-OR-neutral	target with the 28th pick.the packers select some fat punter out of wichita street. 
 positive	can't wait to see the lakers tomorrow! 
 objective	australian directioners! does anyone know what time the mtt premire is tomorrow? 
 positive	pack's brown looks to rebound: lorenzo brown and the wolfpack are hoping today's game against the . 
@@ -4455,7 +4452,7 @@ positive	target come and enjoy java jazz on the move target jan 28th . | -- serp
 positive	its tuesday & time for young life! 8:32pm union lyceum. takin' it up a notch tonight! come join us whywouldyounot. 
 positive	can't wait 4 mon! target target check out bill carter's piece in the target : "prime-time stern" targe. 
 objective-OR-neutral	laguna hills phone fox tuesday comedy sizzle: catch the premieres of new girl, ben and kate an. telephone systems. 
-positive	not too late to come down to our monday night open microphone to sing or just have a good time! iguana 240 w 54 st. will be here till 9 pm. 
+positive	not too late to come down to our monday night open microphone to sing or just have a good time! iguana 240 w 54 street will be here till 9 pm. 
 objective	ncst extend their biggest lead of the game with a lorenzo brown trey. up 11 pt, 47-36, mid 2nd half! 
 positive	this time tomorrow i will be at alexandra palace seeing jack white live for the second time in the last two months:. 
 neutral	1st i thought he was david ruffin impersonator. then i thought he was a backup singer for miguel. sn: your . 
@@ -5461,7 +5458,7 @@ positive	had such an epic night. going to pay for it tomorrow when raw hits newc
 neutral	one of these days the sun is going to come out again. grey, rainy, cloudy day after day in tdot toronto. 
 positive	can't wait for january to roll around with raylan givens and some new episodes of justified. 
 positive	want to see lana del rey in london so much in may! 
-negative	no new grey's or scandal. : 
+negative	no new grey's or scandal.
 negative	and now we have no power! i am sad. i wonder if ces does since it is only two blocks away? kiddos may be coming home from school. 
 neutral	anyone want to go to a free concert saturday in georgia with me? 
 neutral	just notified that steelers can't find hotel rooms in ny so they're leaving sunday morning. thank you, scorecenter, for this breaking news. 
@@ -5505,7 +5502,6 @@ negative	it's howard webb. bookies aren't giving odds on that. target what are t
 neutral	flight from vancouver to montreal. view right window. fling high above the clouds into the sun. 
 positive	last saturday! i am happy. happy halloween! i am happy. can someone make me an edit of zayn malik? i am happy. thanks in advance. 
 objective-OR-neutral	today its the 12 october 2012. five years ago on 12 october 2007 the first wizards of waverly place episode ever premiered on disney channel. 
-neutral	samhain ritual - journey to the underworld, sat nov 3, 6:30p. 
 positive	alex smith is 10th in the mvp running! right now he quals for probowl with over a 70 qbr! i said it before the season started! 
 negative	will take that result & top the group as well. bet tim howard is cursing away at us ahead of sunday lfc. 
 objective-OR-neutral	braille and large print game night is this coming tuesday at mlk jr. library room 215 from 6pm to i am happy.m. see you there! 
