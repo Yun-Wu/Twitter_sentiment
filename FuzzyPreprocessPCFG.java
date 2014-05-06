@@ -35,20 +35,22 @@ public class FuzzyPreprocessPCFG extends FuzzyPreprocess {
 		s = replaceUsername(s);
 
 		s = replaceHashtag(s);
+		
+		s = deleteQuotes(s);
 
 		// s = splitPunc(s);
 
 		// for pcfg
+		s = replaceEmoticons(s);
+		
 		s = deletePuncs(s);
-
+		
 		s = addPeriod(s);
 
 		s = removeSingleton(s);
 		
-		s = removeParen(s);
+		//s = removeParen(s);
 		
-		s = replaceEmoticons(s);
-
 		return s;
 	}
 
@@ -57,6 +59,9 @@ public class FuzzyPreprocessPCFG extends FuzzyPreprocess {
 		return s.replaceAll("(?i)(?:https?|ftps?)://[\\w/%.-_\\?&=]+", "");
 	}
 
+	protected String deletePuncs(String s){
+		return s.replaceAll("([:\"?!\\(\\);,.`~ ])\\1{1,}", "$1");
+	}
 	protected String replaceEmoticons(String s) {
 		String hat = "[<>]?"; // optional hat/brow
 		String eye = "[:;=8]"; // eyes
@@ -84,14 +89,7 @@ public class FuzzyPreprocessPCFG extends FuzzyPreprocess {
 		return s;
 	}
 
-	protected String deletePuncs(String s) {
-		s = s.trim();
-		s = s.replaceAll("([:\"?!\\(\\);,.`~ ])\\1{1,}", "$1");
-		if (s.charAt(0) == '\"')
-			return s.trim().substring(1, s.length() - 1).trim();
-		else
-			return s.trim();
-	}
+
 
 	protected String addPeriod(String s) {
 		String endPunc = "!?.])";
@@ -107,7 +105,7 @@ public class FuzzyPreprocessPCFG extends FuzzyPreprocess {
 	}
 
 	protected String removeSingleton(String s) {
-		s = s.replaceAll("([.!?\\)]) (\\w)* *[.!?\\)]", "$1");
+		s = s.replaceAll("([.!?\\)]) (\\w)* *[.!?]", "$1");
 		s = s.replaceAll("\\b[a-zA-Z]\\.", ".");
 		return s;
 	}

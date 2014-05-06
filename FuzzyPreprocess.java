@@ -89,17 +89,6 @@ public class FuzzyPreprocess extends Preprocess {
 		return buffer.toString();
 	}
 
-	protected String deleteNonascii(String s) {
-		StringBuffer buffer = new StringBuffer();
-		for (int i = 0; i < s.length(); i++) {
-			char c = s.charAt(i);
-			if (c < 0x7F) {
-				buffer.append(c);
-			}
-		}
-		return buffer.toString();
-	}
-
 	public static void main(String[] args) {
 
 		String inputpath = "/u/ywu/nlp/final/trainingandtestdata/tweetCorpus.txt";

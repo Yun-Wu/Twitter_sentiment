@@ -53,10 +53,7 @@ public class Prewcluster extends Preprocess{
 			if ( index == -1)
 				continue;
 			String tweet = line.substring(index+1);
-			if(!isAllAscii(tweet)) continue;
-			
-			//guarantee that s only contains ASCII code
-			if(!isAllAscii(tweet)) continue;
+			tweet = deleteNonascii(tweet);
 			tweet = filter(tweet);
 			writer.write(tweet + "\n");
 		}

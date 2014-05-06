@@ -22,15 +22,25 @@ public abstract class Preprocess {
 
 		s = replaceHashtag(s);
 		
-		
+		s = deleteQuotes(s);
 
 		s = splitPunc(s);
 		return s;
 	}
+	
+	protected String deleteQuotes(String s) {
+		s = s.trim();
+		if (s.charAt(0) == '\"')
+			return s.trim().substring(1, s.length() - 1).trim();
+		else
+			return s.trim();
+	}
 
 	protected String replaceURL(String s) {
 		// replace all urls with URL
-		return s.replaceAll("(?i)(?:https?|ftps?)://[\\w/%.-]+", "URL ");
+		s = s.replaceAll("(?i)(?:https?|ftps?)://[\\w/%.-]+", "URL ");
+		s = s.replaceAll("(?i)\\b(\\S)*picture.twitter(\\S)*\\b", "URL ");
+		return s;
 	}
 
 	protected String replaceHTML(String s) {
@@ -47,17 +57,15 @@ public abstract class Preprocess {
 	}
 
 	protected String replaceUsername(String s) {
-		// replace all urls with URL
 		return s.replaceAll("@[\\S]+", "target ");
 	}
 
 	protected String replaceHashtag(String s) {
-		// replace all urls with URL
 		return s.replaceAll("#", " ");
 	}
 				
 	protected String splitPunc(String s) {
-		String punctuations = "!#$%^&()_+=[]\\{}|:\"?;,.`~";
+		String punctuations = "!^()=[]\\{}|:\"?;,.`~";
 		StringBuffer buffer = new StringBuffer();
 		boolean flag = false;
 		for (int j = 0; j < s.length(); j++) {
@@ -98,4 +106,17 @@ public abstract class Preprocess {
 		}
 		return true;
 	}
+	
+
+	protected String deleteNonascii(String s) {
+		StringBuffer buffer = new StringBuffer();
+		for (int i = 0; i < s.length(); i++) {
+			char c = s.charAt(i);
+			if (c < 0x7F) {
+				buffer.append(c);
+			}
+		}
+		return buffer.toString();
+	}
+
 }
