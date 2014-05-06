@@ -44,6 +44,7 @@ public class FuzzyPreprocessSVM extends FuzzyPreprocess{
 		String[] tmp = s.split(" ");
 		boolean flag = false;
 		for(int i = 0; i < tmp.length; i++){
+			if(tmp[i].trim().length()<1) continue;
 			if(!flag){
 				if(negs.contains(tmp[i])||tmp[i].endsWith("n't"))
 					flag = true;

@@ -65,6 +65,7 @@ public class Feature {
 				writer.write("1 ");
 			else if(tag.equals("negative"))
 				writer.write("-1 ");
+			else continue;
 			
 			int i = 0;
 			for(String f:features){
@@ -86,7 +87,7 @@ public class Feature {
 	
 	public void getCaps(String output){
 		try {
-			getFeatures("\\b([A-Z]+)\\b");
+			getFeatures("\\b([A-Z]{2,})\\b");
 			getVectors(output);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -105,13 +106,16 @@ public class Feature {
 	}
 	
 	public static void main(String[] args){
-		String input = "/u/ywu/nlp/final/trainingandtestdata/fuzzy_processed.txt";
-		Feature f = new Feature(input);
+		String initial = "/u/ywu/nlp/final/trainingandtestdata/tweetCorpus.txt";
+		String processed = "/u/ywu/nlp/final/trainingandtestdata/fuzzy_processed.txt";
 		
-//		String capspath = "/u/ywu/nlp/final/trainingandtestdata/features_caps.txt";
-//		f.getCaps(capspath);
+		Feature fcaps = new Feature(initial);
+		Feature flengs = new Feature(processed);
+		
+		String capspath = "/u/ywu/nlp/final/trainingandtestdata/features_caps.txt";
+		fcaps.getCaps(capspath);
 		
 		String longpath = "/u/ywu/nlp/final/trainingandtestdata/features_lengs.txt";
-		f.getLengs(longpath);
+		flengs.getLengs(longpath);
 	}
 }
