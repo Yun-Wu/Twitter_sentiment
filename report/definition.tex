@@ -20,13 +20,13 @@ given a message, we want to classify whether the message is of positive or negat
  The rio 2 has one of the worst soundtracks evvvvaaa. I'm at Alamo @Drafthouse Cinema. @marissanicole11 \url{http://4sq.com/1kKF8qE} 
 \end{mdframed}
 
-This task is interesting because sentiment of Twitter message can be used as a barometer for public mood and opinion in diverse areas such as entertainment, politics and economics. For example, Diakopoulos and Shamma (2010) use Twitter messages to provide information on the temporal dynamic of sentiment in reaction to the debate video between Barack Obama and John McCain. There is also a report on "Berkshire Hathaway Stock Rises When Anne Hathaway Makes Headlines"\footnote{\url{http://goo.gl/WlfY1c}/}, which indicates that sentiment toward public figure may have potential influence over stock market. 
+This task is interesting because sentiment of Twitter message can be used as a barometer for public mood and opinion in diverse areas such as entertainment, politics and economics. For example, \cite{Diakopoulos:2010} use Twitter messages to provide information on the temporal dynamic of sentiment in reaction to the debate video between Barack Obama and John McCain. There is also a report on "Berkshire Hathaway Stock Rises When Anne Hathaway Makes Headlines"\footnote{\url{http://goo.gl/WlfY1c}/}, which indicates that sentiment toward public figure may have potential influence over stock market. 
 
 However, twitter message presents greater challenges for sentiment analysis than more traditional text genres, such as newswire data.  Tweets are within 140 characters, often consists of a few short sentences or even a single sentence. 
-The language used is very informal, with creative spelling and punctuation, misspellings, slang, new words, URLs, and genre-specific terminology and abbreviations, such as, RT for “re-tweet” and \#hashtags, which are a type of tagging for Twitter messages. (TODO: ref to the web)  
+The language used is very informal, with creative spelling and punctuation, misspellings, slang, new words, URLs, and genre-specific terminology and abbreviations, such as, RT for “re-tweet” and \#hashtags, which are a type of tagging for Twitter messages. \footnote{\url{http://www.cs.york.ac.uk/semeval-2013/task2/}}
 
 \subsection{Algorithm Definition}
-We experiment with two different types of models: The first is the traditional bag-of-word model, namely SVM here. The other is the recently proposed Recursive Neural Tensor Network which works pretty good on movie reviews. As different model has different requirement on pre-processing, we first introduces the models we use and then the pre-processing steps. 
+We experiment with two different types of models: The first is the traditional bag-of-word model, namely SVM here. The other is the recently proposed Recursive Neural Tensor Network which works pretty good on movie reviews. As different model has different requirement on pre-processing, we first introduce the models we use and then the pre-processing steps. 
 
 
 \subsubsection{SVM}
@@ -36,7 +36,7 @@ Each word is represented as a $d-$dimensional vector. When an $n-$gram is given 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width = 0.45\textwidth]{pic/trigram.png}
-\caption{\label{trigram}Trigram Example [TODO: ref]}
+\caption{\label{trigram}Trigram Example (Socher et al., 2013) }
 \end{center}
 \end{figure}
 

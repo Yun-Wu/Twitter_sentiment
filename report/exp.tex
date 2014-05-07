@@ -1,14 +1,12 @@
 \newpage
 \section{Experiment}
 \subsection{Corpus}
-We conducted our experiment on three types of corpus.
+We conduct our experiments on three types of corpus.
 \begin{itemize}
 \item  The first corpus is the Stanford sentiment treebank released by Socher et. al. (2013). It is based on the dataset introduced by Pang and Lee (2005) and consists of 11,855 single sentences extracted from movie reviews. It was parsed with the Stanford parser (Klein and Mannning, 2003) and includes a total of 215,154 unique phrases from those parse trees, each annotated by 3 human judges. It is not twitter message, but would give us a comparison of RNTN and SVM on well formatted English. We refer to this corpus by \textit{Sentiment Treebank} in the reset of paper. 
-\item  The second corpus is movie reviews on Twitter, which can be divided into two categories. 
-\begin{itemize}
-\item The first categoriy is single tweet movie review taken from two specialized review accounts (@FilmReviewIn140, @MovieTwoosh). We have 364 tweets in this corpus. Such reviews are mostly well formatted, usually consist of several sentences. The author rated each movie with A to F grades. And if a movie receives a grade no worth than B, we label the review as positive, otherwise, it is negative. We refer to this corpus by \textit{moiveA} in the reset of paper. 
-\item The second category of movie reviews are collected by searching two currently popular movies names (Rio2 \& Captain American2). Such tweets are published by the generally public and they have all the noisy feature of tweet. We manually labeled this corpus. We refer to this corpus by \textit{moiveB} in the reset of paper. 
-\end{itemize}
+
+\item  The second corpus is movie reviews on Twitter. It is extracted from two specialized review accounts (@FilmReviewIn140, @MovieTwoosh). We have 364 tweets in this corpus. Such reviews are mostly well formatted, usually consist of several sentences. The author rated each movie with A to F grades. And if a movie receives a grade no worth than B, we label the review as positive, otherwise, it is negative. We refer to this corpus by \textit{moive} in the reset of paper. 
+
 \item The third corpus is general tweet message. It is taken from SemEval-2013: Sentiment Analysis in Twitter Task B\footnote{\url{http://www.cs.york.ac.uk/semeval-2013/task2/index.php?id=data}}. Each of the tweet messages has been manually labeled as positive, negative, or neutral. Out of all the 5,750 messages, 2,042 are positive, 855 are negative and 2853 are neutral.  We refer to this corpus by \textit{SemEval} in the reset of paper. 
 \end{itemize}
 
@@ -99,8 +97,7 @@ We conducted three sets of experiment over the general topic twitter corpus \tex
       & \multicolumn{3}{c}{Accuracy(\%)} \\\cline{2-4}
     & positive & negative & overall \\ \hline
     RNTN  & 69.83     &   70.17	    &   69.93    \\ 
-    SVM1  & ~        &          &         \\ 
-    SVM2  & ~        &          &         \\ \hline
+    SVM   & ~        &          &         \\ \hline
     \end{tabular}
     \end{center}
     \caption{\label{exp5_2_1} Experiment 2.1}
@@ -112,9 +109,8 @@ We conducted three sets of experiment over the general topic twitter corpus \tex
       \multirow{2}{*}{Model} 
       & \multicolumn{4}{c}{Accuracy(\%)} \\\cline{2-5}
     & positive & negative & neutral & overall \\ \hline
-    RNTN  & ~        &   ~	   &   ~          &    \\ 
-    SVM1  & ~        &          &             &   \\ 
-    SVM2  & ~        &          &             & \\ \hline
+    RNTN  & 48.12    &   43.17  	   &   49.40       & 48.02    \\ 
+    SVM  & ~        &          &             & \\ \hline
     \end{tabular}
     \end{center}
     \caption{\label{exp5_2_2} Experiment 2.2}

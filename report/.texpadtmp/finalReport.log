@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  5 MAY 2014 11:24
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  7 MAY 2014 10:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -690,11 +690,17 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+[][][][]$\OT1/pcr/m/n/9 http : / / www . cs . york . ac . uk / semeval-[]2013 /
+
+ []
+
+
 Underfull \hbox (badness 1303) in paragraph at lines 31--32
 \OT1/ptm/m/n/10.95 namely SVM here. The other is the re-cently
  []
 
-<pic/trigram.png, id=79, 1228.59pt x 887.315pt>
+<pic/trigram.png, id=86, 1228.59pt x 887.315pt>
 File: pic/trigram.png Graphic file (type png)
  <use pic/trigram.png>
 Package pdftex.def Info: pic/trigram.png used on input line 40.
@@ -714,36 +720,36 @@ File: omsptm.fd
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 86.
 ) (./exp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 12--12
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
 [][][][]$\OT1/pcr/m/n/9 http : / / www . cs . york . ac . uk / semeval-[]2013 /
 
  []
 
-[3]
-Underfull \hbox (badness 4479) in paragraph at lines 16--17
+
+Underfull \hbox (badness 4479) in paragraph at lines 14--15
 \OT1/ptm/m/n/10.95 We firstly eval-u-ate both mod-els us-ing \OT1/ptm/m/it/10.9
 5 Sen-ti-
  []
 
 
-Underfull \hbox (badness 1762) in paragraph at lines 16--17
+Underfull \hbox (badness 1762) in paragraph at lines 14--15
 \OT1/ptm/m/it/10.95 ment Tree-bank\OT1/ptm/m/n/10.95 , which con-tains sin-gle 
 sen-tence
  []
 
 
-Underfull \hbox (badness 3989) in paragraph at lines 16--17
+Underfull \hbox (badness 3989) in paragraph at lines 14--15
 \OT1/ptm/m/n/10.95 movie re-views ex-tracted from []$\OT1/pcr/m/n/10.95 http : 
 / / www .
  []
 
-
-Underfull \hbox (badness 1184) in paragraph at lines 54--55
+[3]
+Underfull \hbox (badness 1184) in paragraph at lines 52--53
 []\OT1/ptm/m/n/10.95 From the re-sult, we can see that hard de-ci-
  []
 
 
-Overfull \hbox (8.4475pt too wide) in paragraph at lines 61--69
+Overfull \hbox (8.4475pt too wide) in paragraph at lines 59--67
  [] 
  []
 
@@ -752,65 +758,34 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.92 
-     pdfTeX warning (ext4): destination with the same identifier (name{table.2}
-) has been already used, duplicate ignored
+l.105 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.2
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.92 
-     pdfTeX warning (ext4): destination with the same identifier (name{table.3}
-) has been already used, duplicate ignored
+l.105 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.3
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.92 
-     ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+l.105 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.4
+}) has been already used, duplicate ignored
 
-)
-(./related.tex) (./future.tex) (./conclusion.tex) (./ref.tex
-Underfull \hbox (badness 10000) in paragraph at lines 14--18
-[]\OT1/ptm/m/n/10 American
- []
-
-
-Underfull \hbox (badness 1622) in paragraph at lines 14--18
-\OT1/ptm/m/n/10 Psy-cho-log-i-cal As-so-ci-a-tion.  1983.  \OT1/ptm/m/it/10 Pub
--li-ca-tions
- []
-
-
-Underfull \hbox (badness 5260) in paragraph at lines 14--18
-\OT1/ptm/m/it/10 Man-ual\OT1/ptm/m/n/10 .  Amer-i-can Psy-cho-log-i-cal As-so-c
-i-a-tion,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--23
-[]
- []
-
-
-Underfull \hbox (badness 4899) in paragraph at lines 20--23
-\OT1/ptm/m/n/10 Association for Com-put-ing Ma-chin-ery.  1983.
- []
-
-
-Underfull \hbox (badness 7362) in paragraph at lines 25--30
-[]\OT1/ptm/m/n/10 Ashok K. Chan-dra, Dex-ter C.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.105 
+      ]) (./related.tex) (./future.tex) (./conclusion.tex) (./ref.tex
+Underfull \hbox (badness 1412) in paragraph at lines 39--44
+\OT1/ptm/m/n/10 and Wu, Jean and Chuang, Ja-son and Man-ning,
  []
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
- [5pdfTeX warning (ext4): destination with the same identifier (name{table.4}) 
+ [5pdfTeX warning (ext4): destination with the same identifier (name{table.5}) 
 has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.45 \end{document}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{table.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -845,13 +820,13 @@ Package rerunfilecheck Info: File `finalReport.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
  ) 
 Here is how much of TeX's memory you used:
- 11873 strings out of 493488
- 192891 string characters out of 3141326
- 374556 words of memory out of 3000000
- 14917 multiletter control sequences out of 15000+200000
+ 11870 strings out of 493488
+ 192888 string characters out of 3141326
+ 374453 words of memory out of 3000000
+ 14915 multiletter control sequences out of 15000+200000
  35384 words of font info for 96 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,11n,29p,930b,394s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,11n,29p,930b,382s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -869,10 +844,10 @@ fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type
 1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/time
 s/utmri8a.pfb>
 Output written on /Users/xiaofan/Documents/study/14S/CS388N/Twitter_sentiment/r
-eport/.texpadtmp/finalReport.pdf (5 pages, 227042 bytes).
+eport/.texpadtmp/finalReport.pdf (5 pages, 228769 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
- 167 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 500000)
+ 197 PDF objects out of 1000 (max. 8388607)
+ 172 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
  126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
