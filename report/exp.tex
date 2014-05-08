@@ -1,5 +1,8 @@
 \newpage
 \section{Experiment}
+\label{sec:exp}
+
+
 \subsection{Corpus}
 We conduct our experiments on three types of corpus.
 \begin{itemize}
@@ -78,7 +81,7 @@ We conducted three sets of experiment over the general topic twitter corpus \tex
 \begin{itemize}
 \item Exp 1: Training on 90\% of \textit{SemEval} and testing on the rest 10\%. 
 
-This is the classic experiment setup. However, as we don't have annotated data about the parse tree (the sentiment of each node of the parse tree, which is required to train the RNTN model), a RNTN model based on \textit{SemEval} can not be trained. Thus, we evaluate different features of SVM model in this experiment. 
+This is the classic experiment setup. However, as we don't have annotated sentiment parse tree  (the sentiment of each node of the parse tree, which is required to train the RNTN model), a RNTN model based on \textit{SemEval} can not be trained. Thus, we evaluate different features of SVM model in this experiment. 
 
 \begin{table}[H]
   \begin{center}
@@ -131,7 +134,9 @@ In this experiment, we apply the model trained on \textit{Sentiment Treebank} on
     \caption{\label{exp5_2_2} Experiment 2.2}
 \end{table}
 
-Even though RNTN performs better than SVM both experiment here, the performance is worse than the SVM trained on same the set. The huge decrease in SVM model resulted from the difference of the two corpus. 
+From Table \ref{exp5_2_1} and Table \ref{exp5_2_2}, we can see that RNTN out perform SVM in both binary decision and ternary decision. However, the performance is worse than the result from Table \ref{exp5_1}. 
+
+The huge decrease in SVM model resulted from the difference of the two corpus. 
 Clearly, twitter specific feature helps SVM model a lot but such feature is not available in the \textit{Sentiment Treebank}. 
 
 Another interesting comparison is the performance of RNTN in Table \ref{exp_1} and Table \ref{exp5_2_2}. Like statistical parser, RNTN model is also quite specific to the genre of the training corpus. To make the problem worse, the Stanford parse doesn't work quite well on twitter message due to the noisy nature of it. 
@@ -155,18 +160,37 @@ In this experiment, we explore domain adaptation of RNTN sentiment model. This i
 %\end{table}
 
 
-\begin{table}[H]
-  \begin{center}
-    \begin{tabular}{ccccc}\hline
-      \multirow{2}{*}{Model} 
-      & \multicolumn{4}{c}{Accuracy(\%)} \\\cline{2-5}
-    & positive & negative & neutral & overall \\ \hline
-    Binary  & ~        &   ~	   &   --         &    \\ 
-    Ternary  & ~        &          &             &   \\ \hline
-    \end{tabular}
-    \end{center}
-    \caption{\label{exp5_3} Experiment 3}
-\end{table}
+%\begin{table}[H]
+%  \begin{center}
+%    \begin{tabular}{ccccc}\hline
+%      \multirow{2}{*}{Model} 
+%      & \multicolumn{4}{c}{Accuracy(\%)} \\\cline{2-5}
+%    & positive & negative & neutral & overall \\ \hline
+%    Binary  & ~        &   ~	   &   --         &    \\ 
+%    Ternary  & ~        &          &             &   \\ \hline
+%    \end{tabular}
+%    \end{center}
+%    \caption{\label{exp5_3} Experiment 3}
+%\end{table}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width = 0.5\textwidth]{pic/model_2b.pdf}
+\caption{Binary decision }
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width = 0.5\textwidth]{pic/model_3c.pdf}
+\caption{Ternary decision }
+\end{center}
+\end{figure}
+
+We train the model with different iterations and evaluate all the models. As we can see from the above two figures, the result fluctuates a lot. Unfortunately, we don't see significant improvement in performance with domain adaptation.  
+
+
+
 
 \end{itemize}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  7 MAY 2014 23:03
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  8 MAY 2014 15:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -668,22 +668,31 @@ File: omspcr.fd
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 32.
- (./abstract.tex) (./intro.tex
+ (./abstract.tex
+Underfull \hbox (badness 2334) in paragraph at lines 2--6
+\OT1/ptm/m/n/10 pus. Two mod-els, Sup-port Vec-tor Ma-
+ []
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 2--6
+\OT1/ptm/m/n/10 chine(SVM) and Re-cur-sive Neu-ral Ten-sor
+ []
+
+) (./intro.tex
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
-) (./definition.tex [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updma
-p/pdftex.map}
+ [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
 
-]
+]) (./definition.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
@@ -691,28 +700,28 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--28
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
 [][][][]$\OT1/pcr/m/n/9 http : / / www . cs . york . ac . uk / semeval-[]2013 /
 
  []
 
 
-Underfull \hbox (badness 1303) in paragraph at lines 32--33
+Underfull \hbox (badness 1303) in paragraph at lines 34--35
 \OT1/ptm/m/n/10.95 namely SVM here. The other is the re-cently
  []
 
-[2] <pic/trigram.png, id=93, 1228.59pt x 887.315pt>
+[2] <pic/trigram.png, id=102, 1228.59pt x 887.315pt>
 File: pic/trigram.png Graphic file (type png)
  <use pic/trigram.png>
-Package pdftex.def Info: pic/trigram.png used on input line 43.
+Package pdftex.def Info: pic/trigram.png used on input line 45.
 (pdftex.def)             Requested size: 211.3883pt x 152.66936pt.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 89.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 91.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 89.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 91.
 ) (./exp.tex
 [3pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
 has been already used, duplicate ignored
@@ -721,12 +730,12 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.1 \newpage
              <./pic/trigram.png>]
-Underfull \hbox (badness 2556) in paragraph at lines 6--7
+Underfull \hbox (badness 2556) in paragraph at lines 9--10
 \OT1/ptm/m/n/10.95 Mannning, 2003) and in-cludes a to-tal of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
 [][][][]$\OT1/pcr/m/n/9 http : / / www . cs . york . ac . uk / semeval-[]2013 /
 
  []
@@ -739,9 +748,9 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.53 
+l.56 
      ]
-Overfull \hbox (6.07295pt too wide) in paragraph at lines 85--99
+Overfull \hbox (6.07295pt too wide) in paragraph at lines 88--102
  [] 
  []
 
@@ -750,39 +759,76 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.138 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.3
+l.142 A
+       nother interesting comparison is the performance of RNTN in Table \re...
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has
+ been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.142 A
+       nother interesting comparison is the performance of RNTN in Table \re...
+pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has
+ been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.142 A
+       nother interesting comparison is the performance of RNTN in Table \re...
+pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has
+ been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.142 A
+       nother interesting comparison is the performance of RNTN in Table \re...
+] <pic/model_2b.pdf, id=145, 361.35pt x 252.945pt>
+File: pic/model_2b.pdf Graphic file (type pdf)
+ <use pic/model_2b.pdf>
+Package pdftex.def Info: pic/model_2b.pdf used on input line 178.
+(pdftex.def)             Requested size: 234.87749pt x 164.41615pt.
+
+Overfull \hbox (7.22688pt too wide) in paragraph at lines 178--179
+ [] 
+ []
+
+<pic/model_3c.pdf, id=146, 361.35pt x 252.945pt>
+File: pic/model_3c.pdf Graphic file (type pdf)
+ <use pic/model_3c.pdf>
+Package pdftex.def Info: pic/model_3c.pdf used on input line 185.
+(pdftex.def)             Requested size: 234.87749pt x 164.41615pt.
+
+Overfull \hbox (7.22688pt too wide) in paragraph at lines 185--186
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
+(./related.tex) (./future.tex [6pdfTeX warning (ext4): destination with the sam
+e identifier (name{figure.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.14 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.138 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.4
-}) has been already used, duplicate ignored
+l.14 
+      <./pic/model_2b.pdf> <./pic/model_3c.pdf>]) (./conclusion.tex) (./ref.tex
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.138 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.5
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.138 
-      ]) (./related.tex) (./future.tex) (./conclusion.tex) (./ref.tex
 Underfull \hbox (badness 1412) in paragraph at lines 39--44
 \OT1/ptm/m/n/10 and Wu, Jean and Chuang, Ja-son and Man-ning,
  []
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
- [6pdfTeX warning (ext4): destination with the same identifier (name{table.6}) 
-has been already used, duplicate ignored
+ [7
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.45 \end{document}
-                   ]
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
 
 (/Users/xiaofan/Documents/study/14S/CS388N/Twitter_sentiment/report/.texpadtmp/
@@ -794,13 +840,13 @@ Package rerunfilecheck Info: File `finalReport.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
  ) 
 Here is how much of TeX's memory you used:
- 11865 strings out of 493488
- 192829 string characters out of 3141326
- 372387 words of memory out of 3000000
- 14912 multiletter control sequences out of 15000+200000
+ 11882 strings out of 493488
+ 193093 string characters out of 3141326
+ 372514 words of memory out of 3000000
+ 14924 multiletter control sequences out of 15000+200000
  35384 words of font info for 96 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,11n,29p,930b,396s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,11n,29p,930b,394s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -818,10 +864,10 @@ fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type
 1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/time
 s/utmri8a.pfb>
 Output written on /Users/xiaofan/Documents/study/14S/CS388N/Twitter_sentiment/r
-eport/.texpadtmp/finalReport.pdf (6 pages, 232049 bytes).
+eport/.texpadtmp/finalReport.pdf (7 pages, 248214 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 172 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 233 PDF objects out of 1000 (max. 8388607)
+ 201 compressed objects within 3 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
