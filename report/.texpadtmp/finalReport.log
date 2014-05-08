@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  7 MAY 2014 10:27
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  7 MAY 2014 23:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -675,12 +675,13 @@ Missing character: There is no ú in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
- [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+) (./definition.tex [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updma
+p/pdftex.map}
 
 
 
 
-]) (./definition.tex
+]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
 Missing character: There is no ‚ in font ptmr7t!
@@ -690,93 +691,84 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--27
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
 [][][][]$\OT1/pcr/m/n/9 http : / / www . cs . york . ac . uk / semeval-[]2013 /
 
  []
 
 
-Underfull \hbox (badness 1303) in paragraph at lines 31--32
+Underfull \hbox (badness 1303) in paragraph at lines 32--33
 \OT1/ptm/m/n/10.95 namely SVM here. The other is the re-cently
  []
 
-<pic/trigram.png, id=86, 1228.59pt x 887.315pt>
+[2] <pic/trigram.png, id=93, 1228.59pt x 887.315pt>
 File: pic/trigram.png Graphic file (type png)
  <use pic/trigram.png>
-Package pdftex.def Info: pic/trigram.png used on input line 40.
+Package pdftex.def Info: pic/trigram.png used on input line 43.
 (pdftex.def)             Requested size: 211.3883pt x 152.66936pt.
- [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.82 
-      <./pic/trigram.png>]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 86.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 89.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 86.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 89.
 ) (./exp.tex
+[3pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \newpage
+             <./pic/trigram.png>]
+Underfull \hbox (badness 2556) in paragraph at lines 6--7
+\OT1/ptm/m/n/10.95 Mannning, 2003) and in-cludes a to-tal of
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 10--10
 [][][][]$\OT1/pcr/m/n/9 http : / / www . cs . york . ac . uk / semeval-[]2013 /
 
  []
 
 
-Underfull \hbox (badness 4479) in paragraph at lines 14--15
-\OT1/ptm/m/n/10.95 We firstly eval-u-ate both mod-els us-ing \OT1/ptm/m/it/10.9
-5 Sen-ti-
- []
+Underfull \vbox (badness 1968) has occurred while \output is active []
 
+ [4pdfTeX warning (ext4): destination with the same identifier (name{table.1}) 
+has been already used, duplicate ignored
 
-Underfull \hbox (badness 1762) in paragraph at lines 14--15
-\OT1/ptm/m/it/10.95 ment Tree-bank\OT1/ptm/m/n/10.95 , which con-tains sin-gle 
-sen-tence
- []
-
-
-Underfull \hbox (badness 3989) in paragraph at lines 14--15
-\OT1/ptm/m/n/10.95 movie re-views ex-tracted from []$\OT1/pcr/m/n/10.95 http : 
-/ / www .
- []
-
-[3]
-Underfull \hbox (badness 1184) in paragraph at lines 52--53
-[]\OT1/ptm/m/n/10.95 From the re-sult, we can see that hard de-ci-
- []
-
-
-Overfull \hbox (8.4475pt too wide) in paragraph at lines 59--67
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.53 
+     ]
+Overfull \hbox (6.07295pt too wide) in paragraph at lines 85--99
  [] 
  []
 
-[4pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
+[5pdfTeX warning (ext4): destination with the same identifier (name{table.2}) h
 as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.105 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.2
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.105 
+l.138 
       pdfTeX warning (ext4): destination with the same identifier (name{table.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.105 
+l.138 
       pdfTeX warning (ext4): destination with the same identifier (name{table.4
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.105 
+l.138 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.5
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.138 
       ]) (./related.tex) (./future.tex) (./conclusion.tex) (./ref.tex
 Underfull \hbox (badness 1412) in paragraph at lines 39--44
 \OT1/ptm/m/n/10 and Wu, Jean and Chuang, Ja-son and Man-ning,
@@ -784,26 +776,8 @@ Underfull \hbox (badness 1412) in paragraph at lines 39--44
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
- [5pdfTeX warning (ext4): destination with the same identifier (name{table.5}) 
+ [6pdfTeX warning (ext4): destination with the same identifier (name{table.6}) 
 has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.45 \end{document}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{table.6}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.45 \end{document}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{table.7}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.45 \end{document}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{table.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -820,13 +794,13 @@ Package rerunfilecheck Info: File `finalReport.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
  ) 
 Here is how much of TeX's memory you used:
- 11870 strings out of 493488
- 192888 string characters out of 3141326
- 374453 words of memory out of 3000000
- 14915 multiletter control sequences out of 15000+200000
+ 11865 strings out of 493488
+ 192829 string characters out of 3141326
+ 372387 words of memory out of 3000000
+ 14912 multiletter control sequences out of 15000+200000
  35384 words of font info for 96 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,11n,29p,930b,382s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,11n,29p,930b,396s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -844,10 +818,10 @@ fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type
 1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/time
 s/utmri8a.pfb>
 Output written on /Users/xiaofan/Documents/study/14S/CS388N/Twitter_sentiment/r
-eport/.texpadtmp/finalReport.pdf (5 pages, 228769 bytes).
+eport/.texpadtmp/finalReport.pdf (6 pages, 232049 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
+ 198 PDF objects out of 1000 (max. 8388607)
  172 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 named destinations out of 1000 (max. 500000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 

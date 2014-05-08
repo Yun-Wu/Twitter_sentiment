@@ -20,7 +20,9 @@ given a message, we want to classify whether the message is of positive or negat
  The rio 2 has one of the worst soundtracks evvvvaaa. I'm at Alamo @Drafthouse Cinema. @marissanicole11 \url{http://4sq.com/1kKF8qE} 
 \end{mdframed}
 
-This task is interesting because sentiment of Twitter message can be used as a barometer for public mood and opinion in diverse areas such as entertainment, politics and economics. For example, \cite{Diakopoulos:2010} use Twitter messages to provide information on the temporal dynamic of sentiment in reaction to the debate video between Barack Obama and John McCain. There is also a report on "Berkshire Hathaway Stock Rises When Anne Hathaway Makes Headlines"\footnote{\url{http://goo.gl/WlfY1c}/}, which indicates that sentiment toward public figure may have potential influence over stock market. 
+This task is interesting because sentiment of Twitter message can be used as a barometer for public mood and opinion in diverse areas such as entertainment, politics and economics. For example, 
+it is used to provide information on the temporal dynamic of sentiment in reaction to the debate video between Barack Obama and John McCain\cite{Diakopoulos:2010}. 
+There is also a report on "Berkshire Hathaway Stock Rises When Anne Hathaway Makes Headlines"\footnote{\url{http://goo.gl/WlfY1c}/}, which indicates that sentiment toward public figure may have potential influence over stock market. 
 
 However, twitter message presents greater challenges for sentiment analysis than more traditional text genres, such as newswire data.  Tweets are within 140 characters, often consists of a few short sentences or even a single sentence. 
 The language used is very informal, with creative spelling and punctuation, misspellings, slang, new words, URLs, and genre-specific terminology and abbreviations, such as, RT for “re-tweet” and \#hashtags, which are a type of tagging for Twitter messages. \footnote{\url{http://www.cs.york.ac.uk/semeval-2013/task2/}}
@@ -31,8 +33,10 @@ We experiment with two different types of models: The first is the traditional b
 
 \subsubsection{SVM}
 
+\newpage
+
 \subsubsection{RNTN}
-Each word is represented as a $d-$dimensional vector. When an $n-$gram is given to the compositional models, it is parsed into a binary tree (as in Figure \ref{trigram}). We compute the parent vector in a bottom up fashion using a compositionally function $g$ and use node vectors as features for a classifier at that node. 
+In Recursive Neural Tensor Network, each word is represented as a $d-$dimensional vector. When an $n-$gram is given to the compositional models, it is parsed into a binary tree (as in Figure \ref{trigram}). We compute the parent vector in a bottom up fashion using a compositionally function $g$ and use node vectors as features for a classifier at that node. 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width = 0.45\textwidth]{pic/trigram.png}
@@ -76,7 +80,7 @@ a \\ p_1
  \right)
 \end{equation*}
 
-As we use the RNTN model as a black box in this project, so I omit the details on training the model. Interested reader could refer to the paper by Socher et al,. (2013). 
+As we use the RNTN model as a black box in this project, so I skip the details on how to train the model. Interested reader could refer to the paper by Socher et al,. (2013). 
 
 
 \subsubsection{Pre-processing}
