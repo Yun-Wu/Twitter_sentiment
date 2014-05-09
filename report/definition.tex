@@ -107,6 +107,28 @@ As we use the RNTN model as a black box in this project, so I skip the details o
 
 
 
+<<<<<<< HEAD
+=======
+\begin{description}
+\item[General features] First we replace all the remaining HTML entities like ``\&amp;'' to ASCII code ``-''. We also delete the quotes around the whole tweet. Then we transform all the URL address to the keyword ``URL'' and the user names(start with @) to the key word ``target'' to keep the structure of the sentences. Hashtags may contain sentimental information so we simply remove the ``\#'' in the front of the hashtag.
+\item[Preprocessing with dictionary] Tweets contain very casual language. One common phenomenon is lengthening word. For example, instead of ``so'', Twitter users may repeat 'o's to express their intense feeling as ``sooo'' or ``sooooooo''. We transform all the lengthening words to three repeated letters like ``sooo''. There are also many misspellings and slangs in Twitter and we use a slang dictionary to formalize it.
+\item[Preprocessing for SVM] We extract additional features for SVM and attach ``\_neg'' to negated sentences. Detailed information can be found in Section \ref{svm}.  %2.2.1.
+\item[Preprocessing for RNTN] Since RNTN is based on Stanford parser, it may not be good at unknown words or incomplete sentences. Emoticons, for example, can not be organized but provide sentimental information. We split each emoticon with hat, eyes, nose and mouth and replace it with the corresponding adverb. For instance, ``:-)'' will be replaced with ``happily'', ``:O'' with be substituted as ``surprisedly''. Multiple punctuation like ``!!!!'' will be shortened to ``!''. To avoid errors in sentence splitter,  a period is added to each tweet that does not end with punctuation.
+\item[Word Cluster] We also try to reduce feature space with word cluster \cite{Owoputi:2013}. Firstly, we obtain hierarchical word clusters via Brown clustering. The algorithm partitions words into a base set of 1,000 clusters, and induces a hierarchy among those 1,000 clusters with a series of greedy agglomerative merges that heuristically optimize the likelihood of a hidden Markov model with a one-class-per-lexical-type constraint. Then we sort the word in each cluster with frequency and use the most frequent one to represent the sentiment of the cluster. According to our experiment, word cluster does help with nonstandard expressions like 
+
+\begin{verbatim}
+^001010110 never neva nvr nevr #never neverr nver neverrr nevaa neeever nevet neeeever nevva
+\end{verbatim}
+
+But it also integrates antonyms, which is fatal for our task.
+\begin{verbatim}
+^111100010011 sad blessed frightening sad lucky frustrating helpful impressed low steady :((( d&d busy
+\end{verbatim}
+
+
+
+\end{description}
+>>>>>>> FETCH_HEAD
 
 
 %Describe in reasonable detail the algorithm you are using to address this problem. A psuedocode description of the algorithm you are using is frequently useful. Trace through a concrete example, showing how your algorithm processes this example. The example should be complex enough to illustrate all of the important aspects of the problem but simple enough to be easily understood. If possible, an intuitively meaningful example is better than one with meaningless symbols. 
