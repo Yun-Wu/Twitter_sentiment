@@ -191,9 +191,15 @@ public class modelTest {
 		
 		// generate only binary output
 		if (binary) {
-			triVec[0] += triVec[1] / 2;
-			triVec[2] += triVec[1] / 2;
+			triVec[0] += triVec[1] * 0.2;
+			triVec[2] += triVec[1] * 0.8;
 			triVec[1] = 0;
+		}
+		else {
+		  triVec[0] = prob[0] + prob[1] * 0.6;  // NEG
+		  triVec[1] = prob[1] * 0.4 + 0.8 * prob[2];            // NET
+		  triVec[2] = prob[3] + prob[4] + 0.2*prob[2]; 
+
 		}
 
 		double max = 0; 
@@ -295,21 +301,4 @@ public class modelTest {
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

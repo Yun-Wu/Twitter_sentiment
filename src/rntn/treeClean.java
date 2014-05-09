@@ -1,12 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class treePre {
-    public static final int ERR = -2;
-    public static final int POS = 0;
-    public static final int NEG = 2;
-    public static final int NET = 4;
-
+public class treeClean {
     private static String input = null;
     private static String output = null;
     private static boolean tag = false;
@@ -35,55 +30,18 @@ public class treePre {
                         throw new IllegalArgumentException("Unknown argument " + args[argIndex + 1]);
                 }
         }
-        processTweet(input, output);
+        processTweet();
     }
 
-    public static void processTweet(String input, String output) throws FileNotFoundException {
+    public static void processTweet() throws FileNotFoundException {
         Scanner sc = new Scanner (new File(input));
         PrintStream out = new PrintStream (output);
         while (sc.hasNextLine()) {
                 String tweet = sc.nextLine();
-                Scanner tweetSc = new Scanner (tweet);
-                int sentiment = getSentiment(tweetSc.next());
-                if (binary && sentiment == NET) {
-                    tweetSc.close();
-                    continue;
-                }
-                if (tag) {
-                    if (sentiment == POS)
-                        out.print("positive\t");
-                    else if (sentiment == NEG)
-                        out.print("negative\t");
-                    else if (sentiment == NET)
-                        out.print("neutral\t");
-                    else 
-                        out.print("error\t");
-                }
-
-                while (tweetSc.hasNext()) {
-                        String token = tweetSc.next().toLowerCase();
-                        if (!isDelete(token)) {
-                            out.print(token + " ");
-                        }
-                }
-                out.println("");  // add the period at the very end
-                tweetSc.close();
+                if (tweet.startsWith("(") && tweet.endsWith(")"))
+                    out.println(tweet);  
         }
         sc.close();
-    }
-
-    public static int getSentiment(String sentiment) {
-        sentiment = sentiment.trim().toLowerCase();
-        if (sentiment.contains("positive"))
-            return POS;
-        else if (sentiment.contains("negative"))
-            return NEG;
-        else 
-            return NET;
-    }
-
-    public static boolean isDelete(String token) {
-        return token.equalsIgnoreCase("url");
     }
 
 
