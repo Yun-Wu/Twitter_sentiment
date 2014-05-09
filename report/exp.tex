@@ -3,17 +3,19 @@
 
 
 \subsection{Corpus}
-We conduct our experiments on three types of corpus.
+We conduct our experiments on three corpus.
 \begin{itemize}
-\item  The first corpus is the Stanford sentiment treebank released by Socher et. al. (2013). It is based on the dataset introduced by Pang and Lee (2005) and consists of 11,855 single sentences extracted from movie reviews on \url{http://www.rottentomatoes.com/}. It was parsed with the Stanford parser (Klein and Mannning, 2003) and includes a total of 215,154 unique phrases from those parse trees, each annotated by 3 human judges. To the best of our knowledge, it is the only public available corpus upon which a RNTN sentiment model can be trained right now. We refer to this corpus by \textit{Sentiment Treebank} in the reset of paper. 
+\item  The first corpus is the Stanford sentiment treebank released by Socher et. al. (2013). It is based on the dataset introduced by Pang and Lee (2005) and consists of 11,855 single sentences extracted from movie reviews on \url{http://www.rottentomatoes.com/}. It was parsed with the Stanford parser (Klein and Mannning, 2003) and includes a total of 215,154 unique phrases from those parse trees, each annotated by 3 human judges. To the best of our knowledge, it is the only public available corpus upon which a RNTN sentiment model can be trained right now. We refer to this corpus by \textit{Sentiment Treebank} in the rest of this paper. 
 
-\item  The second corpus is movie reviews on Twitter. We have 364 tweets extracted from two specialized review accounts (@FilmReviewIn140, @MovieTwoosh). Such reviews are mostly well formatted, usually consist of several sentences. The author rated each movie with A to F grades and the label the sentiment of the tweet base on the grade. Tweets with a grade no worse than B are labeled positive otherwise negative.  We refer to this corpus by \textit{moive} in the reset of paper. 
+\item  The second corpus is movie reviews on Twitter. We have 364 tweets extracted from two specialized review accounts (@FilmReviewIn140, @MovieTwoosh). Such reviews are mostly well formatted, usually consisting of several sentences. 
+We label the tweet based on the A to F grades rated by author. 
+ Tweets with a grade no worse than B are labeled positive otherwise negative.  We refer to this corpus by \textit{moive} in the rest of this paper. 
 
-\item The third corpus is general tweet message. It is taken from SemEval-2013: Sentiment Analysis in Twitter Task B\footnote{\url{http://www.cs.york.ac.uk/semeval-2013/task2/index.php?id=data}}. In their release, each of the tweet messages has been manually labeled as positive, negative, or neutral. Out of all the 5,750 messages, 2,042 are positive, 855 are negative and 2853 are neutral.  We refer to this corpus by \textit{SemEval} in the reset of paper. 
+\item The third corpus is general tweet messages. It is taken from SemEval-2013: Sentiment Analysis in Twitter Task B\footnote{\url{http://www.cs.york.ac.uk/semeval-2013/task2/index.php?id=data}}. In their release, each of the tweet messages has been manually labeled as positive, negative, or neutral. Out of all the 5,750 messages, 2,042 are positive, 855 are negative and 2853 are neutral.  We refer to this corpus by \textit{SemEval} in the rest of this paper. 
 \end{itemize}
 
 \subsection{Single Sentence Sentiment}
-We firstly evaluate both models using \textit{Sentiment Treebank}, The same training/testing splits as in the original paper\cite{Socher:2013} is used. 
+We firstly evaluate both models using \textit{Sentiment Treebank}, The same training/testing split as in the original paper\cite{Socher:2013} is used. 
 
 \begin{table}[H]
   \begin{center}
@@ -33,7 +35,7 @@ In SVM$_S$, we use a smaller dictionary (1635 words) in which words appear more 
 
 
 \subsection{Multiple Sentences Sentiment}
-We then evaluate how to combine the sentiment of multiple sentences. This is not an issue of SVM because only a larger bag is needed. However, RNTN relies on the structural of single sentence so we need to combine the sentiment from multiple sentences within a single tweet. Here, we train the model on \textit{Sentiment Treebank} and test it on \textit{movie} corpus. 
+We then evaluate how to combine the sentiment of multiple sentences. This is not an issue of feature-based model because only a larger bag is needed. However, RNTN relies on the structure of single sentence so we need to combine the sentiment from multiple sentences within a single tweet. Here, we train the model on \textit{Sentiment Treebank} and test it on \textit{movie} corpus. 
 
 As for the RNTN model, we evaluate two ways to combine the sentiment of the whole tweet (multiple sentences). The first is to make hard (binary) decision on single sentence ( either positive or negative) and sentiment of the tweet is decided by majority vote. Soft information (probability) is only used to break a tie. The second way fully relis on soft (probability) information. For each sentence, we generate a 5-element vector for the probability of the having the corresponding sentiment (very negative, negative, neutral, positive, very positive). We add the vector for all the sentences together and make final decision based on the combined vector. 
 \begin{table}[H]
@@ -55,13 +57,13 @@ For the two RNTN models, hard decision model has worse performance than soft dec
 \subsection{General topic Tweet}
 We conducted three sets of experiment over the general topic twitter corpus \textit{SemEval}. 
 \begin{itemize}
-\item Exp 1: Training on 90\% of \textit{SemEval} and testing on the rest 10\%. \\
+\item Exp 1: Training on 90\% of \textit{SemEval} and testing on the rest 10\%. Different feature for SVM are evaluated
 
 \begin{table}[H]
   \begin{center}
     \begin{tabular}{llc}\hline
      \multicolumn{2}{c}{Feature} & Accuracy (\%)     \\\hline
-     \multirow{3}{*}{Unigram}    & Binary feature  &  78.84  \\ 
+     \multirow{3}{*}{Unigram}    & Binary Format  &  78.84  \\ 
                                  & Frequency       &  78.64  \\ 
                                  & Tf-idf          &  78.22 \\
      \multicolumn{2}{l}{Bigram}                    &  70.41 \\  
@@ -77,11 +79,11 @@ We conducted three sets of experiment over the general topic twitter corpus \tex
     \end{center}
     \caption{\label{exp5_1} Experiment 1}
 \end{table}
-This is the classic experiment setup. However, as we don't have annotated sentiment parse tree  (the sentiment of each node of the parse tree, which is required to train the RNTN model), a RNTN model based on \textit{SemEval} can not be trained. Thus, we evaluate the following features of SVM model in this experiment. 
+This is the classic experiment setup. However, as we don't have annotated sentiment parse trees  (the sentiment of each node of the parse tree, which are required to train the RNTN model), a RNTN model based on \textit{SemEval} can not be trained. Thus, we evaluate the following feature-based models in this experiment. 
 
 
 \item Exp 2: Training on \textit{Sentiment Treebank} and testing on \textit{SemEval}. \\ 
-In this experiment, we apply the model trained on \textit{Sentiment Treebank} on the general topic twitter message. It may sounds wired but as we mentioned earlier, \textit{Sentiment Treebank} is the only corpus upon which we can train RNTN model. To be fair, we train a SVM model in the same way and compare the performance of the two in both binary-decision and ternary-decision task. 
+In this experiment, we apply the model trained on \textit{Sentiment Treebank} to the general topic twitter message. It may sound wierd but as we mentioned earlier, \textit{Sentiment Treebank} is the only corpus upon which we can train RNTN model. To be fair, we train a feature-based model in the same way and compare the performance of the two in both binary-decision and ternary-decision task. 
 \begin{table}[H]
   \begin{center}
     \begin{tabular}{cccc}\hline
@@ -108,71 +110,62 @@ In this experiment, we apply the model trained on \textit{Sentiment Treebank} on
     \caption{\label{exp5_2_2} Experiment 2.2}
 \end{table}
 
+\begin{figure*}[htbp]
+\centering
+    \subfloat[Binary Decision]{
+    \centering
+    \includegraphics[width = 0.48\textwidth]{pic/model_2b.pdf}
+    }
+    \hspace{0.01cm}
+    \subfloat[Ternary decision]{
+    \centering
+    \includegraphics[width = 0.48\textwidth]{pic/model_3c.pdf}
+    }
+    \caption{Domain adaptation of RNTN\label{domain}} 
+\end{figure*}
 
 \item Exp 3: Domain adaptation of RNTN\\
 In this experiment, we explore domain adaptation of RNTN sentiment model. This is an interesting experiment as gathering fully annotated training data on twitter message is expensive and labor intensive. We have fully annotated corpus in \textit{Sentiment Treebank} but \textit{SemEval} is only been labeled positive, neutral or negative. In this experiment, we first train the model on \textit{Sentiment Treebank}, then use the above model to label the training set of \textit{SemEval} in sentiment treebank format. We retrain the model with both \textit{Sentiment Treebank} and the labeled  training set of \textit{SemEval}. In the end, we test the new model on the test set of \textit{SemEval}.
 
 
-%\begin{table}[H]
-%  \begin{center}
-%    \begin{tabular}{cccc}\hline
-%      \multirow{2}{*}{Model} 
-%      & \multicolumn{3}{c}{Accuracy(\%)} \\\cline{2-4}
-%    & positive & negative & overall \\ \hline
-%    RNTN  &          &     	   &      \\ 
-%    SVM1  & ~        &          &         \\ 
-%    SVM2  & ~        &          &         \\ \hline
-%    \end{tabular}
-%    \end{center}
-%    \caption{\label{exp5_3_1} Experiment 3.1}
-%\end{table}
 
 
-%\begin{table}[H]
-%  \begin{center}
-%    \begin{tabular}{ccccc}\hline
-%      \multirow{2}{*}{Model} 
-%      & \multicolumn{4}{c}{Accuracy(\%)} \\\cline{2-5}
-%    & positive & negative & neutral & overall \\ \hline
-%    Binary  & ~        &   ~	   &   --         &    \\ 
-%    Ternary  & ~        &          &             &   \\ \hline
-%    \end{tabular}
-%    \end{center}
-%    \caption{\label{exp5_3} Experiment 3}
-%\end{table}
 
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width = 0.5\textwidth]{pic/model_2b.pdf}
-\caption{Binary decision }
-\end{center}
-\end{figure}
+%\begin{figure}[H]
+%\begin{center}
+%\includegraphics[width = 0.5\textwidth]{pic/model_2b.pdf}
+%\caption{Binary decision }
+%\end{center}
+%\end{figure}
+%
+%\begin{figure}[H]
+%\begin{center}
+%\includegraphics[width = 0.5\textwidth]{pic/model_3c.pdf}
+%\caption{Ternary decision }
+%\end{center}
+%\end{figure}
 
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width = 0.5\textwidth]{pic/model_3c.pdf}
-\caption{Ternary decision }
-\end{center}
-\end{figure}
-
-We train the model with different iterations and evaluate all the models. As we can see from the above two figures, the result fluctuates a lot. Unfortunately, we don't see significant improvement in performance with domain adaptation.  
+We train the model with different iterations and evaluate all the models. As we can see from Figure \ref{domain}, the result fluctuates a lot. Unfortunately, we don't see significant improvement in performance with domain adaptation.  
 \end{itemize}
 
 
 \subsection{Discussion}
-\subsubsection{Feature analysis of SVM}
+\subsubsection{Feature analysis}
 \begin{itemize}
-\item \textbf{Unigram}: Experiment results show that use binary format to present unigram performs best. The result of using frequency and Tf-idf to present unigram is slightly worse than using binary format, but almost the same. The reason for this is Tweet is rather short (at most 140 characters). One word is hardly to appear twice in one Tweet. So frequency is not an obviously good feature in Tweets as in other corpus. For Tf-idf, because there are so many topics in Tweets, each word is hardly used to distinguish sentiment.\item \textbf{Bigram}: We use bigrams to help with tweets that contain negated phrases like “not good” or “not cool”. In our experiments, Bigram as a feature does not improve accuracy. However, bigrams tend to be very sparse and the size of our corpus is relatively small. So bigram doesn’t work well on Twitter sentiment analysis. As we can see, the overall accuracy drops. In general using bigrams as features is not helpful because the feature space is very sparse. Thus we want to combine Unigram and Bigram as features. \item \textbf{Unigram-Bigram}: Results show Unigram-Bigram as a feature doesn’t help. Compared to Unigram features, accuracy drops from 78.84\% to 78.26\%. For Alec Go (2009), there was also a decline for Unigram-Bigram as features. \item \textbf{Targets, Hashtags, URLs, Numbers}: The feature combining URL, Numbers with Unigram performs best in our experiment. The result shows that the number of URLs and Numbers is helpful for this task. \item \textbf{Elongated}:  Elongated word as a feature doesn’t help. The reason is that we can hardly classify different elongated forms of one word into one classification, such as “goood” and “gooooddddd”. So elongated words as a feature are sparse and hardly provide other information. In the future work, if we have a better algorithm to deal with elongated words, we can improve the results. \item \textbf{Negations}: Negations as features work almost as well as Unigram as a feature. The reason why negations don’t improve the results is that it makes the dictionary larger than the original one. But since the size of corpus is relatively small, so negations don’t show its advantage in our experiment. 
+\item \textbf{Unigram}: Experiment results indicate that unigram feature in binary format performs best. 
+The result of using frequency and Tf-idf to present unigram is slightly worse than using binary format. This is because Tweet is rather short (at most 140 characters). For this reason, 
+ frequency is not as a good feature in Tweets as in other corpus. For Tf-idf, also because there are so many topics in Tweets, each word is hardly used to distinguish sentiment.\item \textbf{Bigram}: We use bigrams to capture negated phrases like "not good" or "not cool". In our experiments, Bigram as a feature fails to improve accuracy. This is because bigrams tend to be very sparse and the size of our corpus is relatively small. In general using bigrams as features is not helpful because the feature space is very sparse. Thus we want to combine Unigram and Bigram as features. \item \textbf{Unigram-Bigram}: Results show Unigram-Bigram as a feature doesn’t help. Compared to Unigram features, accuracy drops from 78.84\% to 78.26\%. For Alec Go (2009), there was also a decline for Unigram-Bigram as features. \item \textbf{Targets, Hashtags, URLs, Numbers}: The feature combining URL, Numbers with Unigram performs best in our experiment. The result shows that the number of URLs and Numbers is helpful for this task. \item \textbf{Elongated}:  Elongated word as a feature doesn’t help. The reason is that we can hardly classify different elongated forms of one word into one classification, such as “goood” and “gooooddddd”. So elongated words as a feature are sparse and hardly provide other information. In the future work, if we have a better algorithm to deal with elongated words, we can improve the results. \item \textbf{Negations}: Negations as features work almost as well as Unigram as a feature. The reason why negations don’t improve the results is that it makes the dictionary larger than the original one. But since the size of corpus is relatively small, so negations don’t show its advantage in our experiment. 
 
 \end{itemize}
 
 \subsubsection{Comparison of SVM and RNTN}
-As we can see from Table \ref{exp_1}, the performance of RNTN model is significantly better than SVM models. This is consistent with the result of the original paper\cite{Socher:2013}. The huge boost comes from the fact that the structure of the sentence is utilized in the RNTN model. It might seems to be an unfair comparison as more information is needed (the sentiment of each parse of the sentence) in training the RNTN model. 
-However, even if we train the SVM model with sentiment label of each parse as well, the result won't improve much as what SVM sees is just a subset of the original bag.  
+As we can see from Table \ref{exp_1}, the performance of RNTN model is significantly better than SVM models on well formatted text. This is consistent with the result of the original paper \cite{Socher:2013}. The huge boost comes from the fact that the structure of the sentence is utilized in the RNTN model. 
 
-From Table \ref{exp5_2_1} and Table \ref{exp5_2_2}, we can see that RNTN out perform SVM in both binary decision and ternary decision. However, the performance is worse than the result from Table \ref{exp5_1}. 
 
-The huge decrease in SVM model resulted from the difference of the two corpus. 
+%It might seems to be an unfair comparison as more information is needed (the sentiment of each parse of the sentence) in training the RNTN model. 
+%However, even if we use sentiment label of each parse as a feature, the result won't improve much as what most of the feature is redundant. 
+
+From Table \ref{exp5_2_1} and Table \ref{exp5_2_2}, we can see that RNTN out perform SVM in both binary decision and ternary decision. However, the performance of SVM is worse than the result from Table \ref{exp5_1}. The huge decrease in SVM model results from the difference of the two corpora. 
 Clearly, twitter specific feature helps SVM model a lot but such feature is not available in the \textit{Sentiment Treebank}. 
 
 Another interesting comparison is the performance of RNTN in Table \ref{exp_1} and Table \ref{exp5_2_2}. Like statistical parser, RNTN model is also quite specific to the genre of the training corpus. To make the problem worse, the Stanford parse doesn't work quite well on twitter message due to the noisy nature of it. 

@@ -1,6 +1,7 @@
+\vspace{-5mm}
 \section{Introduction}
 
-Microblogging websites (such as Twitter, Weibo) have gained popularity in recent years. People can easily post real time, short message to express their opinions. 
+Microblogging websites (such as Twitter, Weibo) have gained popularity in recent years. People can easily post real time, short messages to express their opinions. 
 Sentiment of microblog is of particular interest because such information is valuable in diverse areas such as entertainment, politics and economics.
 
 However, sentiment analysis over twitter message is a challenging task due to the noisy nature of tweet. 
@@ -10,8 +11,8 @@ Most of existing works of sentiment analysis are based on bag of words classifie
 
 Recursive Neural Tensor Network (RNTN) model is recently proposed to capture the compositional effects with higher accuracy. It represents a phrases through word vectors and a parse tree and then computes vectors for higher nodes in the tree using the same tensor-based composition function. \cite{Socher:2013}. The authors claim that RNTN can accurately captures the sentiment change and scope of negation. However, the data set used in the above paper is a bunch of single sentences extracted from well formatted movie reviews, which is quite different from twitter message. 
 
-In this paper, we evaluate both SVM and RNTN model on twitter message to compare the performance of both models. We collect twitter message from different sources and labeled some of them. Such corpus has been pre-processed according to the natural of different models. Experiment results indicate that RNTN perform significantly better than SVM on well formatted movie reviews. When training on \textit{Sentiment Treebank} and testing on general topic tweet, RNTN still performs slightly better. However, due the lack the annotated training set on twitter message, existing RNTN model fails outperform in SVM on the task of sentiment detecting on general topic tweet. In the end, we explore the possibility of domain adaptation over RNTN model.  
+In this paper, we evaluate both feature-based and RNTN models on twitter message. We collect twitter message from different sources and labeled some of them. Such corpus has been pre-processed according to the natural of different models. Experiment results indicate that RNTN perform significantly better than SVM on well formatted movie reviews. When training on \textit{Sentiment Treebank} and testing on general topic tweet, RNTN still performs slightly better. However, due the lack the annotated training set on twitter message, existing RNTN model fails outperform in SVM on the task of sentiment detecting on general topic tweet. In the end, we explore the possibility of domain adaptation over RNTN model.  
 
 
-The paper is organized as follows. Section \ref{sec:def} defines the task we are solving and explains our approach. 
-Section \ref{sec:exp} presents and discusses experiment results. Section \ref{sec:related} and Section \ref{sec:future} details related and future work. Section \ref{sec:conclusion} concludes the paper.
+%The paper is organized as follows. Section \ref{sec:def} defines the task we are solving and explains our approach. 
+%Section \ref{sec:exp} presents and discusses experiment results. Section \ref{sec:related} and Section \ref{sec:future} details related and future work. Section \ref{sec:conclusion} concludes the paper.

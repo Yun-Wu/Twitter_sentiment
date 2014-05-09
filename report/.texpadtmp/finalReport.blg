@@ -1,15 +1,11 @@
 This is BibTeX, Version 0.99d (TeX Live 2012)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: finalReport.aux
-I couldn't open style file acl.bst
----line 43 of file finalReport.aux
- : \bibstyle{acl
- :              }
-I'm skipping whatever remains of this command
-I found no style file---while reading file finalReport.aux
-You've used 1 entry,
+I found no \bibdata command---while reading file finalReport.aux
+I found no \bibstyle command---while reading file finalReport.aux
+You've used 6 entries,
             0 wiz_defined-function locations,
-            87 strings with 529 characters,
+            95 strings with 638 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0

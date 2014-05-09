@@ -1,0 +1,41 @@
+Documentation svm part:
+
+BuildDictionary.java :
+	Extract a (unigram) dictionary of the whole corpus. Put every appearing work in the corpus in to this dictionary.
+
+BigramDictionary.java : 
+	Extract a (bigram) dictionary from the corpus.
+
+NaiveBayes.java :
+	a Naive Bayesian classifier.
+
+OtherFeatures.java :
+	Used to extract other features including the number of URLs, Numbers from train and test file.
+
+PCA.java :
+	implement pca algorithm.
+
+SVM.java :
+	a SVM classifier. Use svm_train.java and svm_predict.java
+
+combineFeature.java :
+	combine files of different features into one file. The format is <index:value>.
+
+extractBigramFeature.java :
+	Extract bigram feature vector from train and test files.
+
+extractfeature.java
+	Extract unigram feature vector from train and test files. 
+
+splitfile.java
+	To split a file into several files according to a proportion.
+
+svm_predict.java
+	To test svm model on a test file.
+
+svm_train.java
+	To train a svm model. 
+
+
+
+

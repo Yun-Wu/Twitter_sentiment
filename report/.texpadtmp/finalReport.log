@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  9 MAY 2014 14:24
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  9 MAY 2014 16:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -571,41 +571,83 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks23
 \verbatim@in@stream=\read1
 )
+(/usr/local/texlive/2012/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+\captionmargin=\dimen153
+\captionmargin@=\dimen154
+\captionwidth=\dimen155
+\caption@indent=\dimen156
+\caption@parindent=\dimen157
+\caption@hangindent=\dimen158
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1->\@@makecaption {\small #1
+}.
+\c@ContinuedFloat=\count191
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+)
+\c@KVtest=\count192
+\sf@farskip=\skip105
+\sf@captopadj=\dimen159
+\sf@capskip=\skip106
+\sf@nearskip=\skip107
+\c@subfigure=\count193
+\c@subfigure@save=\count194
+\c@lofdepth=\count195
+\c@subtable=\count196
+\c@subtable@save=\count197
+\c@lotdepth=\count198
+\sf@top=\skip108
+\sf@bottom=\skip109
+)
 (/Users/xiaofan/Documents/study/14S/CS388N/Twitter_sentiment/report/.texpadtmp/
 finalReport.aux)
 \openout1 = `finalReport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 32.
  (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 \AtBeginShipoutBox=\box43
-Package hyperref Info: Link coloring OFF on input line 31.
+Package hyperref Info: Link coloring OFF on input line 32.
  (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
 (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count191
+\c@section@level=\count199
 )
-LaTeX Info: Redefining \ref on input line 31.
-LaTeX Info: Redefining \pageref on input line 31.
-LaTeX Info: Redefining \nameref on input line 31.
+LaTeX Info: Redefining \ref on input line 32.
+LaTeX Info: Redefining \pageref on input line 32.
+LaTeX Info: Redefining \nameref on input line 32.
 
 (/Users/xiaofan/Documents/study/14S/CS388N/Twitter_sentiment/report/.texpadtmp/
 finalReport.out)
@@ -617,16 +659,17 @@ finalReport.out)
 
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count192
-\scratchdimen=\dimen153
+\scratchcounter=\count200
+\scratchdimen=\dimen160
 \scratchbox=\box44
-\nofMPsegments=\count193
-\nofMParguments=\count194
+\nofMPsegments=\count201
+Normal \count register pool exhausted, switching to extended pool.
+\nofMParguments=\count277
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count195
-\MPscratchDim=\dimen154
-\MPnumerator=\count196
-\makeMPintoPDFobject=\count197
+\MPscratchCnt=\count278
+\MPscratchDim=\dimen161
+\MPnumerator=\count279
+\makeMPintoPDFobject=\count280
 \everyMPtoPDFconversion=\toks25
 ) (/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -643,48 +686,41 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 33.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 34.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 33.
+LaTeX Font Info:    Try loading font information for U+msa on input line 34.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 33.
+LaTeX Font Info:    Try loading font information for U+msb on input line 34.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 33.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 34.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-LaTeX Font Info:    Try loading font information for OMS+pcr on input line 33.
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 34.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omspcr.fd
 File: omspcr.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 33.
- (./abstract.tex
-Underfull \hbox (badness 2334) in paragraph at lines 2--6
-\OT1/ptm/m/n/10 pus. Two mod-els, Sup-port Vec-tor Ma-
- []
-
-
-Underfull \hbox (badness 1742) in paragraph at lines 2--6
-\OT1/ptm/m/n/10 chine(SVM) and Re-cur-sive Neu-ral Ten-sor
- []
-
-) (./intro.tex
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 34.
+ (./abstract.tex) (./intro.tex
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
@@ -694,6 +730,9 @@ Missing character: There is no ù in font ptmr7t!
 ) (./definition.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -713,18 +752,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--30
  []
 
 
-Underfull \hbox (badness 1303) in paragraph at lines 34--35
-\OT1/ptm/m/n/10.95 namely SVM here. The other is the re-cently
+Underfull \hbox (badness 1783) in paragraph at lines 45--48
+\OT1/ptm/m/n/10.95 with word clus-ter ([]Owoputi et al., 2011[]).
  []
 
-[2]
-Underfull \hbox (badness 2418) in paragraph at lines 49--57
-\OT1/ptm/m/n/10.95 111100010011 sad blessed fright-en-ing sad
- []
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 49.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
+ [2]
+Package mdframed Info: Not enough space on this page on input line 50.
 
-
-Underfull \hbox (badness 1178) in paragraph at lines 58--60
-\OT1/ptm/m/n/10.95 ture of sen-tences while fil-ter-ing out noisy.
+Underfull \hbox (badness 1163) in paragraph at lines 76--78
+\OT1/ptm/m/n/10.95 ture of sen-tences while fil-ter-ing out noise.
  []
 
 Missing character: There is no ‚ in font ptmr7t!
@@ -734,7 +776,7 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
-Underfull \hbox (badness 1102) in paragraph at lines 69--73
+Underfull \hbox (badness 1102) in paragraph at lines 87--91
 \OT1/ptm/m/n/10.95 gram): We use three dif-fer-ent meth-ods to
  []
 
@@ -750,144 +792,51 @@ Missing character: There is no ú in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
-
-Underfull \hbox (badness 1383) in paragraph at lines 78--79
-[]\OT1/ptm/m/n/10.95 Elongated word (\OT1/ptm/b/n/10.95 -elongated\OT1/ptm/m/n/
-10.95 ): Length-en-ing
- []
-
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-
-Underfull \hbox (badness 2707) in paragraph at lines 79--81
-[]\OT1/ptm/m/n/10.95 Targets, Hash-tags, URLs, Num-bers (\OT1/ptm/b/n/10.95 -ur
-l-
- []
-
-<pic/trigram.png, id=118, 1228.59pt x 887.315pt>
+<pic/trigram.png, id=113, 1228.59pt x 887.315pt>
 File: pic/trigram.png Graphic file (type png)
  <use pic/trigram.png>
-Package pdftex.def Info: pic/trigram.png used on input line 90.
+Package pdftex.def Info: pic/trigram.png used on input line 108.
 (pdftex.def)             Requested size: 155.02pt x 111.95662pt.
- [3pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.96 \begin{equation*}
-                       <./pic/trigram.png>]) (./exp.tex
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 8.
-
-(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
-
+ [3 <./pic/trigram.png>]) (./exp.tex
 Underfull \hbox (badness 2556) in paragraph at lines 8--9
 \OT1/ptm/m/n/10.95 Mannning, 2003) and in-cludes a to-tal of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--12
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
 [][][][]$\OT1/pcr/m/n/9 http : / / www . cs . york . ac . uk / semeval-[]2013 /
 
  []
 
-[4pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
-as been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.51 \end{table}
-                ]
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-
- []
-
-
-Overfull \hbox (6.07295pt too wide) in paragraph at lines 62--77
+[4]
+Overfull \hbox (6.07295pt too wide) in paragraph at lines 64--79
  [] 
  []
 
-[5pdfTeX warning (ext4): destination with the same identifier (name{table.2}) h
-as been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.114 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.3
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.114 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.4
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.114 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.5
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.114 
-      ] <pic/model_2b.pdf, id=159, 361.35pt x 252.945pt>
+<pic/model_2b.pdf, id=146, 361.35pt x 252.945pt>
 File: pic/model_2b.pdf Graphic file (type pdf)
+ <use pic/model_2b.pdf>
+Package pdftex.def Info: pic/model_2b.pdf used on input line 118.
+(pdftex.def)             Requested size: 225.48038pt x 157.8355pt.
 
-<use pic/model_2b.pdf>
-Package pdftex.def Info: pic/model_2b.pdf used on input line 146.
-(pdftex.def)             Requested size: 234.87749pt x 164.41615pt.
-
-Overfull \hbox (7.22688pt too wide) in paragraph at lines 146--147
- [] 
- []
-
-<pic/model_3c.pdf, id=160, 361.35pt x 252.945pt>
+<pic/model_3c.pdf, id=147, 361.35pt x 252.945pt>
 File: pic/model_3c.pdf Graphic file (type pdf)
  <use pic/model_3c.pdf>
-Package pdftex.def Info: pic/model_3c.pdf used on input line 153.
-(pdftex.def)             Requested size: 234.87749pt x 164.41615pt.
+Package pdftex.def Info: pic/model_3c.pdf used on input line 123.
+(pdftex.def)             Requested size: 225.48038pt x 157.8355pt.
 
-Overfull \hbox (7.22688pt too wide) in paragraph at lines 153--154
- [] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
+[5]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
 
-Underfull \hbox (badness 1253) in paragraph at lines 169--170
+Underfull \hbox (badness 1253) in paragraph at lines 161--162
 []\OT1/ptm/b/n/10.95 Unigram-Bigram\OT1/ptm/m/n/10.95 : Re-sults show Unigram-
  []
 
@@ -912,55 +861,45 @@ Missing character: There is no ô in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
-[6pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.176 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.176 
-       <./pic/model_2b.pdf> <./pic/model_3c.pdf>]
-Underfull \hbox (badness 1226) in paragraph at lines 188--189
+[6 <./pic/model_2b.pdf> <./pic/model_3c.pdf>]
+Underfull \hbox (badness 1226) in paragraph at lines 181--182
 []\OT1/ptm/m/n/10.95 Another in-ter-est-ing com-par-i-son is the per-for-
  []
 
-) (./related.tex
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no î in font ptmr7t!
-) (./future.tex [7]) (./conclusion.tex) (./ref.tex
+) (./related.tex) (./future.tex) (./conclusion.tex) (./ref.tex [7]
 Underfull \hbox (badness 1412) in paragraph at lines 39--44
 \OT1/ptm/m/n/10 and Wu, Jean and Chuang, Ja-son and Man-ning,
  []
 
+
+Underfull \hbox (badness 1960) in paragraph at lines 76--82
+\OT1/ptm/m/n/10 in sen-ti-ment anal-y-sis of tweets  \OT1/ptm/m/it/10 arXiv pre
+print
+ []
+
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
  [8
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
 
 (/Users/xiaofan/Documents/study/14S/CS388N/Twitter_sentiment/report/.texpadtmp/
 finalReport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
 Package rerunfilecheck Info: File `finalReport.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 46.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
  ) 
 Here is how much of TeX's memory you used:
- 11925 strings out of 493488
- 193825 string characters out of 3141326
- 375275 words of memory out of 3000000
- 14955 multiletter control sequences out of 15000+200000
+ 13052 strings out of 493488
+ 214129 string characters out of 3141326
+ 400471 words of memory out of 3000000
+ 16065 multiletter control sequences out of 15000+200000
  35384 words of font info for 96 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,11n,29p,951b,398s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,11n,46p,951b,487s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local
@@ -979,10 +918,10 @@ st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
 Output written on /Users/xiaofan/Documents/study/14S/CS388N/Twitter_sentiment/r
-eport/.texpadtmp/finalReport.pdf (8 pages, 272431 bytes).
+eport/.texpadtmp/finalReport.pdf (8 pages, 274831 bytes).
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
- 228 compressed objects within 3 object streams
- 48 named destinations out of 1000 (max. 500000)
+ 270 PDF objects out of 1000 (max. 8388607)
+ 236 compressed objects within 3 object streams
+ 55 named destinations out of 1000 (max. 500000)
  160 words of extra memory for PDF output out of 10000 (max. 10000000)
 
