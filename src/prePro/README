@@ -1,0 +1,15 @@
+Source files in this package provide different methods to build a Twitter corpus for sentiment classification.
+
+Preprocess.java is the super class for others, which provides a filter function to process raw data, including recognizing URL addresses, replacing HTML entities etc.
+
+FuzzyPreprocess.java further investigates the properties of tweets. It shortens lengthening words and replace slangs with words in a slang dictionary.
+
+FuzzyPreprocessedSVM.java extends FuzzyPreprocess.java and builds a corpus for SVM model. It attaches "_neg" to every word appearing between a negation and a clause-level punctuation mark.
+
+FuzzyPreprocessedPCFG.java extends FuzzyPreprocess.java and builds a corpus for RNTN model. It replaces emoticons with the corresponding adverbs, and complete sentences structures.
+
+Prewcluster.java extracts words ready for the word clustering process.
+
+Postwcluster.java makes use of paths in word cluster to reduce misspelling and slangs.
+
+Feature.java extracts features like lengthening, capitalization for SVM training.
