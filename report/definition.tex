@@ -35,6 +35,7 @@ We experiment with two different types of models: The first is the traditional b
 
 
 \subsubsection{SVM}
+\label{svm}
 
 \newpage
 
@@ -92,9 +93,9 @@ The Twitter language is known as informal and flexible. Such properties will pro
 \begin{description}
 \item[General features] First we replace all the remaining HTML entities like ``\&amp;'' to ASCII code ``-''. We also delete the quotes around the whole tweet. Then we transform all the URL address to the keyword ``URL'' and the user names(start with @) to the key word ``target'' to keep the structure of the sentences. Hashtags may contain sentimental information so we simply remove the ``\#'' in the front of the hashtag.
 \item[Preprocessing with dictionary] Tweets contain very casual language. One common phenomenon is lengthening word. For example, instead of ``so'', Twitter users may repeat 'o's to express their intense feeling as ``sooo'' or ``sooooooo''. We transform all the lengthening words to three repeated letters like ``sooo''. There are also many misspellings and slangs in Twitter and we use a slang dictionary to formalize it.
-\item[Preprocessing for SVM] We extract additional features for SVM and attach ``\_neg'' to negated sentences. Detailed information can be found in Section 2.2.1.
-\item[Preprocessing for RNTN] Since RNTN is based on Stanford parser, it may not be good at unknown words or incomplete sentences. Emoticons, for example, can not be organized but provide sentimental information. We split each emoticon with hat, eyes, nose and mouth and replace it with the corresponding adverb. For instance, ``:-)'' will be replaced with ``happily'', ``:O'' with be substituted as ``surprisedly''. Multiple punctuation like ``!!!!'' will be shortened to ``!''. And a period will be attached to each tweet that does not end with punctuation.
-\item[Word Cluster] We also try to reduce feature space with word cluster. Firstly, we obtain hierarchical word clusters via Brown clustering. The algorithm partitions words into a base set of 1,000 clusters, and induces a hierarchy among those 1,000 clusters with a series of greedy agglomerative merges that heuristically optimize the likelihood of a hidden Markov model with a one-class-per-lexical-type constraint. Then we sort the word in each cluster with frequency and use the most frequent one to represent the sentiment of the cluster.
+\item[Preprocessing for SVM] We extract additional features for SVM and attach ``\_neg'' to negated sentences. Detailed information can be found in Section \ref{svm}.  %2.2.1.
+\item[Preprocessing for RNTN] Since RNTN is based on Stanford parser, it may not be good at unknown words or incomplete sentences. Emoticons, for example, can not be organized but provide sentimental information. We split each emoticon with hat, eyes, nose and mouth and replace it with the corresponding adverb. For instance, ``:-)'' will be replaced with ``happily'', ``:O'' with be substituted as ``surprisedly''. Multiple punctuation like ``!!!!'' will be shortened to ``!''. To avoid errors in sentence splitter,  a period is added to each tweet that does not end with punctuation.
+\item[Word Cluster] We also try to reduce feature space with word cluster \cite{Owoputi:2013}. Firstly, we obtain hierarchical word clusters via Brown clustering. The algorithm partitions words into a base set of 1,000 clusters, and induces a hierarchy among those 1,000 clusters with a series of greedy agglomerative merges that heuristically optimize the likelihood of a hidden Markov model with a one-class-per-lexical-type constraint. Then we sort the word in each cluster with frequency and use the most frequent one to represent the sentiment of the cluster.
 
 \end{description}
 

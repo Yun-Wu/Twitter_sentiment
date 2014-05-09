@@ -1,4 +1,3 @@
-\newpage
 \section{Experiment}
 \label{sec:exp}
 
@@ -37,7 +36,7 @@ However, even if we train the SVM model with sentiment label of each parse as we
 
 
 \subsection{Multiple Sentences Sentiment}
-We then evaluate how to combine the sentiment multiple sentences. This is not an issue of SVM because only a larger bag is needed. However, RNTN relies on the structural of single sentence so we need to combine the sentiment from multiple sentences within a single tweet. Here, we train the model on \textit{Sentiment Treebank} and test it on \textit{movie} corpus. 
+We then evaluate how to combine the sentiment of multiple sentences. This is not an issue of SVM because only a larger bag is needed. However, RNTN relies on the structural of single sentence so we need to combine the sentiment from multiple sentences within a single tweet. Here, we train the model on \textit{Sentiment Treebank} and test it on \textit{movie} corpus. 
 
 As for the RNTN model, we evaluate two ways to combine the sentiment of the whole tweet (multiple sentences). The first is to make hard (binary) decision on single sentence ( either positive or negative) and sentiment of the tweet is decided by majority vote. Soft information (probability) is only used to break a tie. The second way fully relis on soft (probability) information. For each sentence, we generate a 5-element vector for the probability of the having the corresponding sentiment (very negative, negative, neutral, positive, very positive). We add the vector for all the sentences together and make final decision based on the combined vector. 
 \begin{table}[H]
@@ -190,6 +189,7 @@ In this experiment, we explore domain adaptation of RNTN sentiment model. This i
 We train the model with different iterations and evaluate all the models. As we can see from the above two figures, the result fluctuates a lot. Unfortunately, we don't see significant improvement in performance with domain adaptation.  
 
 
+\subsection{Discussion}
 
 
 \end{itemize}
