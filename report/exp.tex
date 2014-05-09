@@ -81,23 +81,6 @@ We conducted three sets of experiment over the general topic twitter corpus \tex
 \item Exp 1: Training on 90\% of \textit{SemEval} and testing on the rest 10\%. 
 This is the classic experiment setup. However, as we don't have annotated sentiment parse tree  (the sentiment of each node of the parse tree, which is required to train the RNTN model), a RNTN model based on \textit{SemEval} can not be trained. Thus, we evaluate the following features of SVM model in this experiment. 
 
-\begin{enumerate}
-\item Word unigram and bigram (Unigram or Bigram): In our experiment, we try to use the presence or absence of contiguous sequences of tokens as a feature. We use unigram and bigram as features and evaluate the different performance. Also we use three different methods to present unigram feature. \\
- \textbf{Bianry Format}: if the word is present in the Tweet, we use $0/1$ to show presence of a word.\\ 
- \textbf{Frequency}: The count of each word is used as unigram feature. For example, if “good” appears twice in the Tweet, we set 2 to this word.\\
- \textbf{tf-idf}: It is a numerical statistic that is intended to reflect how important a word is to a document in a collection or corpus. tf-idf is the product of two statistics, term frequency and inverse document frequency. 
-  \begin{eqnarray*}
-      tfidf_{i,j} = & tf_{i,j} \times idf_{i} & \qquad \text{where} \\
-      tf_{i,j} = & \frac{n_{i,j}}{\sum_k n_{k,j}} & \\
-      idf_i = & \log \frac{|D|}{|\{j: t_i \in d_j\}|} &
-  \end{eqnarray*}   
-  
-  	\item Elongated word (\textbf{-elongated}): Lengthening words by repeating letters (such as “coooool”, “goooood”) is reported to be an strong indication of sentiment. Brody et al. (2011) reported that on average, one out of six sentences has word lengthening. In our experiment, we also take elongated word as a feature.    \item Targets, Hashtags, URLs, Numbers (\textbf{-url-num}): These are the features related to Twitter. Users of Twitter use the “\@” symbol to refer to other users in this manner automatically alerts them. Users use hashtags “\#” to mark topics. 
-  	%This is primarily done to increase the visibility of their tweets. URL and numbers are common in tweet.    \item Negation (-\textbf{neg}): The effect of negation word is not simply the opposite of the original sentiment. In this paper, we try to append a NEG suffix to every word appearing between a negation and a clause-level punctuation mark. 
-  
-\end{enumerate}
-
-
 \begin{table}[H]
   \begin{center}
     \begin{tabular}{llc}\hline

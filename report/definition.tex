@@ -31,46 +31,61 @@ The language used is very informal, with creative spelling and punctuation, miss
 
 
 \subsection{Algorithm Definition}
-We experiment with two different types of models: The first is the traditional bag-of-word model, namely SVM here. The other is the recently proposed Recursive Neural Tensor Network which works pretty good on movie reviews. As different model has different requirement on pre-processing, we first introduce the models we use and then the pre-processing steps. 
+We experiment with two different types of models: The first is the traditional bag-of-word model, namely SVM here. The other is the recently proposed Recursive Neural Tensor Network which works pretty good on movie reviews. We first introduce the pre-processing steps and then the models. 
 
 \subsubsection{Pre-processing}
 The Twitter language is known as informal and flexible. Such properties will provide information about sentiment and should be processed carefully. As the SVM and RNTN model are build upon two different basic ideas, we need to have different pre-processing step for each model. For SVM, our goal is to maximize the information about sentiment while reduce the sparsity of the feature vector. For RNTN, we try to formalize tweets to well-organized sentences such that Stanford parser can recognize it well.
 
 \begin{description}
-\item[General features] First we replace all the remaining HTML entities like ``\&amp;'' to ASCII code ``-''. We also delete the quotes around the whole tweet. Then we transform all the URL address to the keyword ``URL'' and the user names(start with @) to the key word ``target'' to keep the structure of the sentences. Hashtags may contain sentimental information so we simply remove the ``\#'' in the front of the hashtag.
-\item[Preprocessing with dictionary] Tweets contain very casual language. One common phenomenon is lengthening word. For example, instead of ``so'', Twitter users may repeat 'o's to express their intense feeling as ``sooo'' or ``sooooooo''. We transform all the lengthening words to three repeated letters like ``sooo''. There are also many misspellings and slangs in Twitter and we use a slang dictionary to formalize it.
+\item[General features] First we replace all the remaining HTML entities like ``\&amp;'' to ASCII code ``-''. We also delete the quotes around the whole tweet. Then we transform all the URL address to the keyword ``URL'' and the user names(start with @) to the key word ``target'' to keep the structure of the sentences. Hashtags may contain sentimental information so we simply remove the ``\#'' in the front of the hashtag. We transform all the lengthening words ("sooooo" instead of "so") to three repeated letters like ``sooo''. There are also many misspellings and slangs in Twitter and we use a slang dictionary to formalize it.
+
+
+%\item[Preprocessing with dictionary] Tweets contain very casual language. One common phenomenon is lengthening word. For example, instead of ``so'', Twitter users may repeat 'o's to express their intense feeling as ``sooo'' or ``sooooooo''. We transform all the lengthening words to three repeated letters like ``sooo''. There are also many misspellings and slangs in Twitter and we use a slang dictionary to formalize it.
 \item[Preprocessing for SVM] We extract additional features for SVM and attach ``\_neg'' to negated sentences. Detailed information can be found in Section \ref{svm}.  %2.2.1.
+We also try to reduce feature space with word cluster \cite{Owoputi:2013}. Firstly, we obtain hierarchical word clusters via Brown clustering. The algorithm partitions words into a base set of 1,000 clusters, and induces a hierarchy among those 1,000 clusters with a series of greedy agglomerative merges that heuristically optimize the likelihood of a hidden Markov model with a one-class-per-lexical-type constraint. Then we sort the word in each cluster with frequency and use the most frequent one to represent the sentiment of the cluster.
 
-\item[Word Cluster] We also try to reduce feature space with word cluster \cite{Owoputi:2013}. Firstly, we obtain hierarchical word clusters via Brown clustering. The algorithm partitions words into a base set of 1,000 clusters, and induces a hierarchy among those 1,000 clusters with a series of greedy agglomerative merges that heuristically optimize the likelihood of a hidden Markov model with a one-class-per-lexical-type constraint. Then we sort the word in each cluster with frequency and use the most frequent one to represent the sentiment of the cluster.
-
+%\item[Word Cluster] We also try to reduce feature space with word cluster \cite{Owoputi:2013}. Firstly, we obtain hierarchical word clusters via Brown clustering. The algorithm partitions words into a base set of 1,000 clusters, and induces a hierarchy among those 1,000 clusters with a series of greedy agglomerative merges that heuristically optimize the likelihood of a hidden Markov model with a one-class-per-lexical-type constraint. Then we sort the word in each cluster with frequency and use the most frequent one to represent the sentiment of the cluster.\\
+%\begin{verbatim}
+001010110 never neva nvr nevr \#never neverr nver neverrr nevaa neeever nevet neeeever nevva
+%\end{verbatim}
+%
+%But it also integrates antonyms, which is fatal for our task.
+%\begin{verbatim} 
+\\
+111100010011 sad blessed frightening sad lucky frustrating helpful impressed low steady :((( d\&d busy
+%\end{verbatim}
 
 \item[Preprocessing for RNTN] Since RNTN is based on Stanford parser, we need to preserve the structure of sentences while filtering out noisy. 
  Emoticons, for example, can not be easily organized by our parser but provide sentimental information. We split each emoticon with hat, eyes, nose and mouth and replace it with the corresponding adverb. For instance, ``:-)'' will be replaced with ``happily'', ``:O'' with be substituted as ``surprisedly''.  To reduce errors in sentence splitter, multiple punctuation like ``!!!!'' will be shortened to ``!''.  A period is added to each tweet that does not end with punctuation.
 
-%\begin{verbatim}
-%^001010110 never neva nvr nevr #never neverr nver neverrr nevaa neeever nevet neeeever nevva
-%\end{verbatim}
-%
-%But it also integrates antonyms, which is fatal for our task.
-%\begin{verbatim}
-%^111100010011 sad blessed frightening sad lucky frustrating helpful impressed low steady :((( d&d busy
-%\end{verbatim}
+
 \end{description}
 
 
 \subsubsection{SVM}
 \label{svm}
-A Support Vector Machine (SVM) is a discriminative classifier formally defined by a separating hyperplane. In other words, given labeled training data (supervised learning), the algorithm outputs an optimal hyperplane which categorizes new examples. We use the SVM$^{\text{libSVM}}$ software with a linear and Radial Basis Function (RBF) kernel. We input two sets of vectors of size $m$. Each entry in the vector corresponds to the presence of a feature. For example, with a unigram feature extractor, each feature is a single word found in a tweet. If this single word also appears in our dictionary, the value is $1$, otherwise the value is $0$. In our experiment, we evaluate several different methods to stand for the presence of one feature. 
+A Support Vector Machine (SVM) is a discriminative classifier formally defined by a separating hyperplane. In other words, given labeled training data (supervised learning), the algorithm outputs an optimal hyperplane which categorizes new examples. We use the SVM$^{\text{libSVM}}$ software with a linear and Radial Basis Function (RBF) kernel. We input two sets of vectors of size $m$. Each entry in the vector corresponds to the presence of a feature. For example, with a unigram feature extractor, each feature is a single word found in a tweet. If this single word also appears in our dictionary, the value is $1$, otherwise the value is $0$. In our experiment, we evaluate the following features:
+\begin{enumerate}
+\item Word unigram and bigram (Unigram or Bigram): We use three different methods to present unigram feature. \\
+ \textbf{Bianry Format}: We use $0/1$ to indicate the presence of a word.\\ 
+ \textbf{Frequency}: The count of each word is used as unigram feature. For example, if “good” appears twice in the Tweet, we set 2 to this word.\\
+ \textbf{tf-idf}: It is a numerical statistic to reflect the importance of a word to a document. tf-idf is the product of two statistics, term frequency and inverse document frequency. 
+  \begin{eqnarray*}
+      tfidf_{i,j} = & tf_{i,j} \times idf_{i} & \qquad \text{where} \\
+      tf_{i,j} = & \frac{n_{i,j}}{\sum_k n_{k,j}} & \\
+      idf_i = & \log \frac{|D|}{|\{j: t_i \in d_j\}|} &
+  \end{eqnarray*}   
+  	\item Elongated word (\textbf{-elongated}): Lengthening words by repeating letters (such as “coooool”, “goooood”) is reported to be an strong indication of sentiment. Brody et al. (2011) reported that on average, one out of six sentences has word lengthening. In our experiment, we also take elongated word as a feature.    \item Targets, Hashtags, URLs, Numbers (\textbf{-url-num}): These are the features related to Twitter. Users of Twitter use the “\@” symbol to refer to other users in this manner automatically alerts them. Users use hashtags “\#” to mark topics. 
+  	%This is primarily done to increase the visibility of their tweets. URL and numbers are common in tweet.    \item Negation (-\textbf{neg}): The effect of negation word is not simply the opposite of the original sentiment. In this paper, we try to append a NEG suffix to every word appearing between a negation and a clause-level punctuation mark. 
+  
+\end{enumerate}
 
-
-
-\newpage
 
 \subsubsection{RNTN}
 In Recursive Neural Tensor Network, each word is represented as a $d-$dimensional vector. When an $n-$gram is given to the compositional models, it is parsed into a binary tree (as in Figure \ref{trigram}). We compute the parent vector in a bottom up fashion using a compositionally function $g$ and use node vectors as features for a classifier at that node. 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width = 0.45\textwidth]{pic/trigram.png}
+\includegraphics[width = 0.33\textwidth]{pic/trigram.png}
 \caption{\label{trigram}Trigram Example (Socher et al., 2013) }
 \end{center}
 \end{figure}
