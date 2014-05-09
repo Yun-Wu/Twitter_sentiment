@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  9 MAY 2014 13:52
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  9 MAY 2014 14:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -717,35 +717,78 @@ Underfull \hbox (badness 1303) in paragraph at lines 34--35
 \OT1/ptm/m/n/10.95 namely SVM here. The other is the re-cently
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-[]\OT1/ptm/m/n/10.95 Tweets con-tain
- []
-
-
-Underfull \hbox (badness 1215) in paragraph at lines 41--42
-\OT1/ptm/m/n/10.95 very ca-sual lan-guage. One com-mon phe-
- []
-
-
-Underfull \hbox (badness 1783) in paragraph at lines 44--45
-\OT1/ptm/m/n/10.95 with word clus-ter ([]Owoputi et al., 2011[]).
- []
-
 [2]
-Underfull \hbox (badness 1178) in paragraph at lines 47--49
+Underfull \hbox (badness 2418) in paragraph at lines 49--57
+\OT1/ptm/m/n/10.95 111100010011 sad blessed fright-en-ing sad
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 58--60
 \OT1/ptm/m/n/10.95 ture of sen-tences while fil-ter-ing out noisy.
  []
 
-<pic/trigram.png, id=113, 1228.59pt x 887.315pt>
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+
+Underfull \hbox (badness 1102) in paragraph at lines 69--73
+\OT1/ptm/m/n/10.95 gram): We use three dif-fer-ent meth-ods to
+ []
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+
+Underfull \hbox (badness 1383) in paragraph at lines 78--79
+[]\OT1/ptm/m/n/10.95 Elongated word (\OT1/ptm/b/n/10.95 -elongated\OT1/ptm/m/n/
+10.95 ): Length-en-ing
+ []
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+
+Underfull \hbox (badness 2707) in paragraph at lines 79--81
+[]\OT1/ptm/m/n/10.95 Targets, Hash-tags, URLs, Num-bers (\OT1/ptm/b/n/10.95 -ur
+l-
+ []
+
+<pic/trigram.png, id=118, 1228.59pt x 887.315pt>
 File: pic/trigram.png Graphic file (type png)
  <use pic/trigram.png>
-Package pdftex.def Info: pic/trigram.png used on input line 73.
-(pdftex.def)             Requested size: 211.3883pt x 152.66936pt.
-)
-(./exp.tex
+Package pdftex.def Info: pic/trigram.png used on input line 90.
+(pdftex.def)             Requested size: 155.02pt x 111.95662pt.
+ [3pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.96 \begin{equation*}
+                       <./pic/trigram.png>]) (./exp.tex
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 8.
- (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsptm.fd
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
@@ -755,63 +798,25 @@ Underfull \hbox (badness 2556) in paragraph at lines 8--9
 \OT1/ptm/m/n/10.95 Mannning, 2003) and in-cludes a to-tal of
  []
 
-[3pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) 
-has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.9 
-     <./pic/trigram.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 12--12
 [][][][]$\OT1/pcr/m/n/9 http : / / www . cs . york . ac . uk / semeval-[]2013 /
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 1968) has occurred while \output is active []
-
- [4pdfTeX warning (ext4): destination with the same identifier (name{table.1}) 
-has been already used, duplicate ignored
+[4pdfTeX warning (ext4): destination with the same identifier (name{table.1}) h
+as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.55 
-     ]
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
+l.51 \end{table}
+                ]
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
-Overfull \hbox (6.07295pt too wide) in paragraph at lines 105--120
+ []
+
+
+Overfull \hbox (6.07295pt too wide) in paragraph at lines 62--77
  [] 
  []
 
@@ -820,59 +825,49 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.137 \end{table}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{table.3}) has been already used, duplicate ignored
+l.114 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.3
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.137 \end{table}
-                 ] <pic/model_2b.pdf, id=161, 361.35pt x 252.945pt>
+l.114 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.4
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.114 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.5
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.114 
+      ] <pic/model_2b.pdf, id=159, 361.35pt x 252.945pt>
 File: pic/model_2b.pdf Graphic file (type pdf)
 
 <use pic/model_2b.pdf>
-Package pdftex.def Info: pic/model_2b.pdf used on input line 193.
+Package pdftex.def Info: pic/model_2b.pdf used on input line 146.
 (pdftex.def)             Requested size: 234.87749pt x 164.41615pt.
 
-Overfull \hbox (7.22688pt too wide) in paragraph at lines 193--194
+Overfull \hbox (7.22688pt too wide) in paragraph at lines 146--147
  [] 
  []
 
-<pic/model_3c.pdf, id=162, 361.35pt x 252.945pt>
+<pic/model_3c.pdf, id=160, 361.35pt x 252.945pt>
 File: pic/model_3c.pdf Graphic file (type pdf)
  <use pic/model_3c.pdf>
-Package pdftex.def Info: pic/model_3c.pdf used on input line 200.
+Package pdftex.def Info: pic/model_3c.pdf used on input line 153.
 (pdftex.def)             Requested size: 234.87749pt x 164.41615pt.
 
-Overfull \hbox (7.22688pt too wide) in paragraph at lines 200--201
+Overfull \hbox (7.22688pt too wide) in paragraph at lines 153--154
  [] 
  []
 
-[6pdfTeX warning (ext4): destination with the same identifier (name{table.4}) h
-as been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.206 \end{itemize}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{table.5}) has been already used, duplicate ignored
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.206 \end{itemize}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{figure.2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.206 \end{itemize}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{figure.3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.206 \end{itemize}
-                    <./pic/model_2b.pdf> <./pic/model_3c.pdf>]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
@@ -892,7 +887,7 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
 
-Underfull \hbox (badness 1253) in paragraph at lines 217--218
+Underfull \hbox (badness 1253) in paragraph at lines 169--170
 []\OT1/ptm/b/n/10.95 Unigram-Bigram\OT1/ptm/m/n/10.95 : Re-sults show Unigram-
  []
 
@@ -917,7 +912,28 @@ Missing character: There is no ô in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
-) (./related.tex) (./future.tex) (./conclusion.tex [7]) (./ref.tex
+[6pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.176 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.176 
+       <./pic/model_2b.pdf> <./pic/model_3c.pdf>]
+Underfull \hbox (badness 1226) in paragraph at lines 188--189
+[]\OT1/ptm/m/n/10.95 Another in-ter-est-ing com-par-i-son is the per-for-
+ []
+
+) (./related.tex
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no î in font ptmr7t!
+) (./future.tex [7]) (./conclusion.tex) (./ref.tex
 Underfull \hbox (badness 1412) in paragraph at lines 39--44
 \OT1/ptm/m/n/10 and Wu, Jean and Chuang, Ja-son and Man-ning,
  []
@@ -938,13 +954,13 @@ Package rerunfilecheck Info: File `finalReport.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 46.
  ) 
 Here is how much of TeX's memory you used:
- 11923 strings out of 493488
- 193785 string characters out of 3141326
+ 11925 strings out of 493488
+ 193825 string characters out of 3141326
  375275 words of memory out of 3000000
- 14954 multiletter control sequences out of 15000+200000
+ 14955 multiletter control sequences out of 15000+200000
  35384 words of font info for 96 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,11n,29p,951b,413s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,11n,29p,951b,398s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local
@@ -963,10 +979,10 @@ st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
 Output written on /Users/xiaofan/Documents/study/14S/CS388N/Twitter_sentiment/r
-eport/.texpadtmp/finalReport.pdf (8 pages, 271488 bytes).
+eport/.texpadtmp/finalReport.pdf (8 pages, 272431 bytes).
 PDF statistics:
- 258 PDF objects out of 1000 (max. 8388607)
- 224 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
- 152 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 262 PDF objects out of 1000 (max. 8388607)
+ 228 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 160 words of extra memory for PDF output out of 10000 (max. 10000000)
 
