@@ -29,7 +29,8 @@ There is also a report on "Berkshire Hathaway Stock Rises When Anne Hathaway Mak
 However, twitter message presents greater challenges for sentiment analysis than more traditional text genres, such as newswire data.  Tweets are within 140 characters, often consists of a few short sentences or even a single sentence. 
 The language used is very informal, with creative spelling and punctuation, misspellings, slang, new words, URLs, and genre-specific terminology and abbreviations, such as, RT for “re-tweet” and \#hashtags, which are a type of tagging for Twitter messages. \footnote{\url{http://www.cs.york.ac.uk/semeval-2013/task2/}}
 
-\subsection{Algorithm Definition}
+
+\subsection{Algorithm Definition}
 We experiment with two different types of models: The first is the traditional bag-of-word model, namely SVM here. The other is the recently proposed Recursive Neural Tensor Network which works pretty good on movie reviews. As different model has different requirement on pre-processing, we first introduce the models we use and then the pre-processing steps. 
 
 
@@ -86,13 +87,16 @@ As we use the RNTN model as a black box in this project, so I skip the details o
 
 
 \subsubsection{Pre-processing}
-\begin{itemize}
-\item Twitter related features
-\item Slangs
-\item Emoticons
-\item Spelling correction
-\item Word Cluster
-\end{itemize}
+The Twitter language is known as informal and flexible. Such properties will provide information about sentiment and should be processed carefully. There are also specified requirement for two models. For SVM, our goal is to maximize the information about sentiment while reduce the sparsity of the feature vector. For RNTN, we try to formalize tweets to well-organized sentences such that Stanford parser can recognize it well.
+
+\begin{description}
+\item[General features] First we replace all the remaining HTML entities like ``\&amp;'' to ASCII code ``-''. We also delete the quotes around the whole tweet. Then we transform all the URL address to the keyword ``URL'' and the user names(start with @) to the key word ``target'' to keep the structure of the sentences. Hashtags may contain sentimental information so we simply remove the ``\#'' in the front of the hashtag.
+\item[Preprocessing with dictionary] Tweets contain very casual language. One common phenomenon is lengthening word. For example, instead of ``so'', Twitter users may repeat 'o's to express their intense feeling as ``sooo'' or ``sooooooo''. We transform all the lengthening words to three repeated letters like ``sooo''. There are also many misspellings and slangs in Twitter and we use a slang dictionary to formalize it.
+\item[Preprocessing for SVM] We extract additional features for SVM and attach ``\_neg'' to negated sentences. Detailed information can be found in Section 2.2.1.
+\item[Preprocessing for RNTN] Since RNTN is based on Stanford parser, it may not be good at unknown words or incomplete sentences. Emoticons, for example, can not be organized but provide sentimental information. We split each emoticon with hat, eyes, nose and mouth and replace it with the corresponding adverb. For instance, ``:-)'' will be replaced with ``happily'', ``:O'' with be substituted as ``surprisedly''. Multiple punctuation like ``!!!!'' will be shortened to ``!''. And a period will be attached to each tweet that does not end with punctuation.
+\item[Word Cluster] We also try to reduce feature space with word cluster. Firstly, we obtain hierarchical word clusters via Brown clustering. The algorithm partitions words into a base set of 1,000 clusters, and induces a hierarchy among those 1,000 clusters with a series of greedy agglomerative merges that heuristically optimize the likelihood of a hidden Markov model with a one-class-per-lexical-type constraint. Then we sort the word in each cluster with frequency and use the most frequent one to represent the sentiment of the cluster.
+
+\end{description}
 
 
 %Describe in reasonable detail the algorithm you are using to address this problem. A psuedocode description of the algorithm you are using is frequently useful. Trace through a concrete example, showing how your algorithm processes this example. The example should be complex enough to illustrate all of the important aspects of the problem but simple enough to be easily understood. If possible, an intuitively meaningful example is better than one with meaningless symbols. 
