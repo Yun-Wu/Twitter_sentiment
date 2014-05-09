@@ -11,6 +11,7 @@
 \BOOKMARK [2][-]{subsection.3.3}{Multiple Sentences Sentiment}{section.3}% 11
 \BOOKMARK [2][-]{subsection.3.4}{General topic Tweet}{section.3}% 12
 \BOOKMARK [2][-]{subsection.3.5}{Discussion}{section.3}% 13
-\BOOKMARK [1][-]{section.4}{Related Work}{}% 14
-\BOOKMARK [1][-]{section.5}{Future work}{}% 15
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 16
+\BOOKMARK [3][-]{subsubsection.3.5.1}{SVM}{subsection.3.5}% 14
+\BOOKMARK [1][-]{section.4}{Related Work}{}% 15
+\BOOKMARK [1][-]{section.5}{Future work}{}% 16
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 17
