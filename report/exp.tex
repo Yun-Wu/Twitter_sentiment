@@ -74,13 +74,29 @@ From Table \ref{exp2_1}, we can see that both RNTN models perform better than SV
 %\end{table}
 %
 %Comparing both table, we can see that preprocessing indeed helped in improving the performance.  
-
+\vspace{-5pt}
 \subsection{General topic Tweet}
 We conducted three sets of experiment over the general topic twitter corpus \textit{SemEval}. 
 \begin{itemize}
 \item Exp 1: Training on 90\% of \textit{SemEval} and testing on the rest 10\%. 
+This is the classic experiment setup. However, as we don't have annotated sentiment parse tree  (the sentiment of each node of the parse tree, which is required to train the RNTN model), a RNTN model based on \textit{SemEval} can not be trained. Thus, we evaluate the following features of SVM model in this experiment. 
 
-This is the classic experiment setup. However, as we don't have annotated sentiment parse tree  (the sentiment of each node of the parse tree, which is required to train the RNTN model), a RNTN model based on \textit{SemEval} can not be trained. Thus, we evaluate different features of SVM model in this experiment. 
+\begin{enumerate}
+\item Word unigram and bigram (Unigram or Bigram): In our experiment, we try to use the presence or absence of contiguous sequences of tokens as a feature. We use unigram and bigram as features and evaluate the different performance. Also we use three different methods to present unigram feature. \\
+ \textbf{Bianry Format}: if the word is present in the Tweet, we use $0/1$ to show presence of a word.\\ 
+ \textbf{Frequency}: The count of each word is used as unigram feature. For example, if “good” appears twice in the Tweet, we set 2 to this word.\\
+ \textbf{tf-idf}: It is a numerical statistic that is intended to reflect how important a word is to a document in a collection or corpus. tf-idf is the product of two statistics, term frequency and inverse document frequency. 
+  \begin{eqnarray*}
+      tfidf_{i,j} = & tf_{i,j} \times idf_{i} & \qquad \text{where} \\
+      tf_{i,j} = & \frac{n_{i,j}}{\sum_k n_{k,j}} & \\
+      idf_i = & \log \frac{|D|}{|\{j: t_i \in d_j\}|} &
+  \end{eqnarray*}   
+  
+  	\item Elongated word (\textbf{-elongated}): Lengthening words by repeating letters (such as “coooool”, “goooood”) is reported to be an strong indication of sentiment. Brody et al. (2011) reported that on average, one out of six sentences has word lengthening. In our experiment, we also take elongated word as a feature.    \item Targets, Hashtags, URLs, Numbers (\textbf{-url-num}): These are the features related to Twitter. Users of Twitter use the “\@” symbol to refer to other users in this manner automatically alerts them. Users use hashtags “\#” to mark topics. 
+  	%This is primarily done to increase the visibility of their tweets. URL and numbers are common in tweet.    \item Negation (-\textbf{neg}): The effect of negation word is not simply the opposite of the original sentiment. In this paper, we try to append a NEG suffix to every word appearing between a negation and a clause-level punctuation mark. 
+  
+\end{enumerate}
+
 
 \begin{table}[H]
   \begin{center}
@@ -89,7 +105,8 @@ This is the classic experiment setup. However, as we don't have annotated sentim
      \multirow{3}{*}{Unigram}    & Binary feature  &  78.84  \\ 
                                  & Frequency       &  78.64  \\ 
                                  & Tf-idf          &  78.22 \\
-     \multicolumn{2}{l}{Bigram}                    &  70.41 \\    
+     \multicolumn{2}{l}{Bigram}                    &  70.41 \\  
+     \multicolumn{2}{l}{Unigram-Bigram}            &  78.26 \\         
      \multicolumn{2}{l}{Unigram-url-num}           &  \textbf{79.32} \\
      \multicolumn{2}{l}{Unigram-elongated}         &  79.01 \\
      \multicolumn{2}{l}{Unigram-url-num-elongated} &  79.19 \\
@@ -101,9 +118,6 @@ This is the classic experiment setup. However, as we don't have annotated sentim
     \end{center}
     \caption{\label{exp5_1} Experiment 1}
 \end{table}
-
-Begin. \vspace{5cm} Discuss the result here. 
-
 
 \item Exp 2: Training on \textit{Sentiment Treebank} and testing on \textit{SemEval}. \\ 
 In this experiment, we apply the model trained on \textit{Sentiment Treebank} on the general topic twitter message. It may sounds wired but as we mentioned earlier, \textit{Sentiment Treebank} is the only corpus upon which we can train RNTN model. To be fair, we train a SVM model in the same way and compare the performance of the two in both binary-decision and ternary-decision task. 
@@ -187,10 +201,14 @@ In this experiment, we explore domain adaptation of RNTN sentiment model. This i
 \end{figure}
 
 We train the model with different iterations and evaluate all the models. As we can see from the above two figures, the result fluctuates a lot. Unfortunately, we don't see significant improvement in performance with domain adaptation.  
+\end{itemize}
 
 
 \subsection{Discussion}
-
+\subsubsection{SVM}
+We explore the usage of n-gram combined with other features. 
+\begin{itemize}
+\item \textbf{Unigram}: Experiment results show that use binary format to present unigram performs best. The result of using frequency and Tf-idf to present unigram is slightly worse than using binary format, but almost the same. The reason for this is Tweet is rather short (at most 140 characters). One word is hardly to appear twice in one Tweet. So frequency is not an obviously good feature in Tweets as in other corpus. For Tf-idf, because there are so many topics in Tweets, each word is hardly used to distinguish sentiment.\item \textbf{Bigram}: We use bigrams to help with tweets that contain negated phrases like “not good” or “not cool”. In our experiments, Bigram as a feature does not improve accuracy. However, bigrams tend to be very sparse and the size of our corpus is relatively small. So bigram doesn’t work well on Twitter sentiment analysis. As we can see, the overall accuracy drops. In general using bigrams as features is not helpful because the feature space is very sparse. Thus we want to combine Unigram and Bigram as features. \item \textbf{Unigram-Bigram}: Results show Unigram-Bigram as a feature doesn’t help. Compared to Unigram features, accuracy drops from 78.84\% to 78.26\%. For Alec Go (2009), there was also a decline for Unigram-Bigram as features. \item \textbf{Targets, Hashtags, URLs, Numbers}: The feature combining URL, Numbers with Unigram performs best in our experiment. The result shows that the number of URLs and Numbers is helpful for this task. \item \textbf{Elongated}:  Elongated word as a feature doesn’t help. The reason is that we can hardly classify different elongated forms of one word into one classification, such as “goood” and “gooooddddd”. So elongated words as a feature are sparse and hardly provide other information. In the future work, if we have a better algorithm to deal with elongated words, we can improve the results. \item \textbf{Negations}: Negations as features work almost as well as Unigram as a feature. The reason why negations don’t improve the results is that it makes the dictionary larger than the original one. But since the size of corpus is relatively small, so negations don’t show its advantage in our experiment. 
 
 \end{itemize}
 
