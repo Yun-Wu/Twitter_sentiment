@@ -18,9 +18,9 @@ Content
 
 Corpus:
 ----------------------------------
-- Movie review (from original paper)
-- Movie related tweet (collecting)
-- General tweet (avaible soon)
+- Movie review
+- Movie related tweet
+- General tweet
 
 Experiment:
 ----------------------------------
