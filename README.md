@@ -1,33 +1,33 @@
 Twitter sentiment analysis
 ==========================
 
-What to do?
+Content
 ----------------------
 - Preprocessing (Yun)
-  - target removal 
-  - url removal 
-  - slang translation 
-  - spell correction with noisy channel model
-     http://alias-i.com/lingpipe/demos/tutorial/querySpellChecker/read-me.html
-  - word clustering
-  - ...
+  - fuzzy process with string pattern
+  - replace emoticons and slang according to dictionary
+  - use word clustering to help parse tweets
 - Bag of word method  (Qiren)
   - SVM
   - Naive Bayes
   - Maximum Entropy
 - Sentiemnt treebank  (Xiaofan)
   - Existing model 
-  - Bootstrapping. (like HW3) 
-- Tweet corpus (Xiaofan)
+  - Bootstrapping. 
 
 
-Experiment:
+Corpus:
 ----------------------------------
 - Movie review (from original paper)
 - Movie related tweet (collecting)
 - General tweet (avaible soon)
 
-
+Experiment:
+----------------------------------
+- Single sentence sentiment
+- Multiple sentences sentiment
+- SVM with different features
+- Cross-domain traning
 
 Component:
 -------------------------------------
